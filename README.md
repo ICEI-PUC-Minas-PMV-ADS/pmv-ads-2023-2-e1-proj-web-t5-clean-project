@@ -4,7 +4,7 @@
 
 `Desenvolvimento de aplicação web front-end`
 
-`1º semestre/2022`
+`1º semestre/2023`
 
 Nosso objetivo geral é promover a gestão sustentável de resíduos por meio da conscientização e da educação.
 
