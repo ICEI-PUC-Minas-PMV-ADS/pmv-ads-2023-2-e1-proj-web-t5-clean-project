@@ -36,9 +36,12 @@ Tivemos como inspiração para esse projeto de orientação sobre o descarte cor
 
 A reciclagem é o processo de reaproveitamento de resíduos para a produção de um novo produto que tem por sua vez, a função de reduzir a poluição tal maléfica para os seres vivos e prezar pelos recursos naturais. Além de ajudar na diminuição de tragédias ambientais, a reciclagem também tem como importante quesito a preservação de fontes de matérias-primas, diminuição do gasto com aterros sanitários, geração de emprego. Também é importante por causa do tempo que alguns itens demoram para se decompor, segue uma pequena tabela abaixo: 
 
-•Latas de alumínio <———> De 100 a 500 anos 
-•Tampinhas de garrafa <———> De 100 a 500 anos 
-•Pilhas e baterias <———> De 100 a 500 anos 
+•Latas de alumínio <———> De 100 a 500 anos
+
+•Tampinhas de garrafa <———> De 100 a 500 anos
+
+•Pilhas e baterias <———> De 100 a 500 anos
+
 •Garrafas de plástico <———> Mais de 500 anos  
 
 O Descarte correto dos lixos, vem como importante solução para minimizar as doenças como febre tifoide, cólera, amebíase, disenteria, giardíase, ascaridíase, leishmaniose, febre amarela, dengue, malária, leptospirose, peste bubônica e tétano, que são causadas por vetores como moscas, baratas, mosquitos e ratos. 
