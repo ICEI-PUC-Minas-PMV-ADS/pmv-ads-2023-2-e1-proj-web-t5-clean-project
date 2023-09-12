@@ -1,25 +1,24 @@
 # Título do Projeto
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de aplicação web front-end`
 
-`SEMESTRE`
+`1º semestre/2022`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+Nosso objetivo geral é promover a gestão sustentável de resíduos por meio da conscientização e da educação.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Felipe Augusto Guimarães Dante
+* Israel Rodrigues Diniz
+* Letícia Pires Lopes de Souza
+* Luiza Maria da Silva Machado
+* Maria Júlia Souza Santos
 
 ## Orientador
 
-* Nome completo do professor
+* Simone Alves Nogueira
 
 # Documentação
 
