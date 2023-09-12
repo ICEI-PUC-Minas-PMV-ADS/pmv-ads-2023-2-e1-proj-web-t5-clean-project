@@ -16,9 +16,9 @@
 <tr>
 <td><b>Necessidades</b></td>
   <td>Informação do horário aproximado que o agente recolhe o lixo na sua rua
-  <td>Informação sobre uma localização aproximada do agente coletor (caminhão)
-  <td>Guia sobre como fazer a separação de forma correta do lixo residencial
-  <td>Descobrir pontos de coleta seletiva próximos a região que ele/ela reside </td> 
+  <br>Informação sobre uma localização aproximada do agente coletor (caminhão)
+  <br>Guia sobre como fazer a separação de forma correta do lixo residencial
+  <br>Descobrir pontos de coleta seletiva próximos a região que ele/ela reside </td> 
 </tr>
 </tbody>
 </table>
