@@ -15,10 +15,26 @@
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-  <td>Informação do horário aproximado que o agente recolhe o lixo na sua rua
-  <br>Informação sobre uma localização aproximada do agente coletor (caminhão)
-  <br>Guia sobre como fazer a separação de forma correta do lixo residencial
-  <br>Descobrir pontos de coleta seletiva próximos a região que ele/ela reside </td> 
+  <td>- Informação do horário aproximado que o agente recolhe o lixo na sua rua
+  <br>- Informação sobre uma localização aproximada do agente coletor (caminhão)
+  <br>- Guia sobre como fazer a separação de forma correta do lixo residencial
+  <br>- Descobrir pontos de coleta seletiva próximos a região que ele/ela reside </td> 
+</tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr align=centerAgentes de coleta </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Agente, indiferente de sexo ou idade </td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+  <td>- Entendimento por parte do usuário/cliente sobre como fazer uma separação correta (principalmente na questão do vidro)
+  <br>- Informação sobre uma localização aproximada do agente coletor (caminhão)</td> 
 </tr>
 </tbody>
 </table>
@@ -33,10 +49,11 @@
 
 [Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
 
-|EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
-|--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+|EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE`                        |         PARA ... `PORQUE`                            |
+|--------------------|--------------------------------------------------|------------------------------------------------------|
+| Eu como morador    | Desejo saber o dia e horário da coleta           | Para evitar acúmulo de lixo em minha casa            |
+| Eu como morador    | Quero descartar e separar o lixo em categorias   | Para organizar e descartar o lixo de forma correta   |
+| Eu como morador    | Quero descartar e separar o lixo em categorias   | Para organizar e descartar o lixo de forma correta   |
 
 ## Requisitos do Projeto
 
