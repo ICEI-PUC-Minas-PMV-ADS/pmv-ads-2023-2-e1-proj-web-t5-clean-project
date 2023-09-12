@@ -7,15 +7,18 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil 01: Morador de um bairro </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Morador dos bairros das cidades, indiferente de classe, sexo ou idade</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+  <td>Informação do horário aproximado que o agente recolhe o lixo na sua rua</td>
+  <td>Informação sobre uma localização aproximada do agente coletor (caminhão)</td>
+  <td>Guia sobre como fazer a separação de forma correta do lixo residencial</td> 
+  <td>Descobrir pontos de coleta seletiva próximos a região que ele/ela reside </td> 
 </tr>
 </tbody>
 </table>
