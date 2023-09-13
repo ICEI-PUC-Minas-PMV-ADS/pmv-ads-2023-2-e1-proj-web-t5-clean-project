@@ -57,19 +57,15 @@
 
 ## Requisitos do Projeto
 
-[Com base nas Histórias de Usuários, enumere os requisitos da solução. Lembre-se que cada requisito deve corresponder a uma, e somente uma, característica alvo da solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.]
-
 ### Requisitos Funcionais
-
-[Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
 |ID     | Descrição                                                                                                                                  | Prioridade |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| RF-01 | A aplicação deve informar para o usuário o dia e horário da coleta do bairro da região                                                     | Alta       | 
-| RF-02 | A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por co                                             | Alta       |
-| RF-03 | A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para facilitar a interação do usuário com o si                             | Médio      |
+| RF-01 | A aplicação deve informar para o usuário o dia e horário da coleta do bairro                                                               | Alta       | 
+| RF-02 | A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por cores/categoria)                               | Alta       |
+| RF-03 | A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para facilitar a interação do usuário com o sistema                        | Médio      |
 | RF-04 | A aplicação deve notificar o usuário sobre a localização do agente de coleta                                                               | Alta       |
-| RF-05 | A aplicação deve oferecer uma funcionalidade para que o usuário cadastre seu e-mail                                                        | Alta       |
+| RF-05 | A aplicação deve oferecer uma funcionalidade para que o usuário cadastre seu e-mail e seu endereço                                         | Alta       |
 | RF-06 | A aplicação deve informar sobre os pontos de coleta seletiva próximos ao bairro do morador                                                 | Médio      |
 | RF-07 | A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar                                             | Médio      |
 | RF-08 | A aplicação deve fornecer informações sobre descartes especiais (medicamentos, produtos eletrônicos, pneus, resíduos sólidos especiais)    | Alta       |
