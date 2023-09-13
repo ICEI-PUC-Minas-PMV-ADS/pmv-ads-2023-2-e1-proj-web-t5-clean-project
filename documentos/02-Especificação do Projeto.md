@@ -63,9 +63,9 @@
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
-|ID    | Descrição                | Prioridade |
+|ID    | Descrição                                                                                                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 |  ...                    | ...   | 
+| RF-01 |  A aplicação deve informar para o usuário o dia e horário da coleta do bairro da região                 | ...   | 
 |  ...  |  ...                    | ...   |
 
 **Prioridade: Alta / Média / Baixa. 
