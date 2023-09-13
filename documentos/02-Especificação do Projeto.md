@@ -2,8 +2,6 @@
 
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
-
 <table>
 <tbody>
 <tr align=center>
@@ -42,18 +40,20 @@
 
 ## Histórias de Usuários
 
-[Apresente aqui as histórias de usuários que são relevantes para o projeto da solução.]
+|      EU COMO... `QUEM`      |                                                 QUERO/PRECISO ... `O QUE`                   |                       PARA ... `PORQUE`                                      |
+|-----------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| Eu como morador             | Desejo saber o dia e horário da coleta                                                                 | Para evitar acúmulo de lixo em minha casa                         |
+| Eu como morador             | Quero descartar e separar o lixo em categorias                                                         | Para organizar e descartar o lixo de forma correta                |
+| Eu como morador             | Quero saber onde fica o ponto de coleta mais próximo da minha região                                   | Para ter uma segunda opção, caso o agente não passa na rua        |
+| Eu como agente de coleta    | Quero informar os horários que o caminhão passará nos bairros                                          | Para a otimização do serviço e evitar sobrecarga em dia de coleta |
+| Eu como agente de coleta    | Preciso que o lixo seja separado em categorias                                                         | Para facilitar o tratamento                                       |
+| Eu como agente de coleta    | Preciso que o lixo seja embalado em sacolas resistentes, bem fechadas e de tamanho adequado            | Para evitar que a sacola se abra e espalhe o lixo pelas ruas      |
+| Eu como agente de coleta    | Gostaria preciso que o morador descarte o vidro e materiais perfurocortantes da forma correta          | Para evitar que os agentes se cortem                              |
+| Eu como agente de coleta    | Gostaria de saber quais cores de sacola devo usar no meu descarte                                      | Para que possa facilitar a coleta do agente                       |
+| Eu como agente de coleta    | Gostaria da colaboração dos outros motoristas no trânsito                                              | Para trabalharmos com segurança                                   |
+| Eu como agente de coleta    | Gostaria de receber uma atualização sobre a localização do caminhão de lixo                            | Para colocar o lixo para que ele seja recolhido                   |
+| Eu como agente de coleta    | Gostaria de saber como descartar materiais especiais                                                   | Para facilitar a separação do lixo                                |
 
-> **Link Útil**:
-> - [Como escrever boas histórias de usuário](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
-[Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
-
-|EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE`                        |         PARA ... `PORQUE`                            |
-|--------------------|--------------------------------------------------|------------------------------------------------------|
-| Eu como morador    | Desejo saber o dia e horário da coleta           | Para evitar acúmulo de lixo em minha casa            |
-| Eu como morador    | Quero descartar e separar o lixo em categorias   | Para organizar e descartar o lixo de forma correta   |
-| Eu como morador    | Quero descartar e separar o lixo em categorias   | Para organizar e descartar o lixo de forma correta   |
 
 ## Requisitos do Projeto
 
