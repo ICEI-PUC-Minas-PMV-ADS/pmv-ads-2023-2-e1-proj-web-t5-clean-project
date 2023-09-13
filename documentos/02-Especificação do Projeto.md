@@ -67,15 +67,15 @@
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | RF-01 | A aplicação deve informar para o usuário o dia e horário da coleta do bairro da região                                                     | Alta       | 
 | RF-02 | A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por co                                             | Alta       |
-| RF-03 | A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para facilitar a interação do usuário com o si                             | Média      |
+| RF-03 | A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para facilitar a interação do usuário com o si                             | Médio      |
 | RF-04 | A aplicação deve notificar o usuário sobre a localização do agente de coleta                                                               | Alta       |
 | RF-05 | A aplicação deve oferecer uma funcionalidade para que o usuário cadastre seu e-mail                                                        | Alta       |
-| RF-06 | A aplicação deve informar sobre os pontos de coleta seletiva próximos ao bairro do morador                                                 | Média      |
-| RF-07 | A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar                                             | Média      |
+| RF-06 | A aplicação deve informar sobre os pontos de coleta seletiva próximos ao bairro do morador                                                 | Médio      |
+| RF-07 | A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar                                             | Médio      |
 | RF-08 | A aplicação deve fornecer informações sobre descartes especiais (medicamentos, produtos eletrônicos, pneus, resíduos sólidos especiais)    | Alta       |
 | RF-09 | A aplicação deve informar como fazer o descarte correto de vidro                                                                           | Alta       |
 | RF-10 | A aplicação deve fornecer uma página home em que o usuário poderá ver as informações mais importantes                                      | Alta       |
-| RF-11 | A aplicação deve informar os bairros em que é realizada a coleta seletiva porta a porta                                                    | Média      |
+| RF-11 | A aplicação deve informar os bairros em que é realizada a coleta seletiva porta a porta                                                    | Médio      |
 | RF-12 | A aplicação deve ter uma página de perguntas frequentes                                                                                    | Baixa      |
 
 
@@ -89,8 +89,8 @@
 |--------|-------------------------------------------------------------------------------------------------|-----------|
 | RNF-01 |  A aplicação deve conter uma área de sugestão do usuário                                        | Alta      | 
 | RNF-02 |  A aplicação deve ser compatível com os navegadores                                             | Baixa     | 
-| RNF-03 |  A aplicação deve ser acessível a pessoas deficientes                                           | Média     | 
-| RNF-04 |  A aplicação deve garantir que as informações pessoais e sensíveis do usuário seja protegido    | Alta     | 
+| RNF-03 |  A aplicação deve ser acessível a pessoas deficientes                                           | Médio     | 
+| RNF-04 |  A aplicação deve garantir que as informações pessoais e sensíveis do usuário seja protegido    | Alta      | 
 
 **Prioridade: Alta / Média / Baixa. 
 
