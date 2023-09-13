@@ -63,20 +63,20 @@
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
-|ID    | Descrição                                                                                                | Prioridade |
-|-------|---------------------------------|----|
-| RF-01 |  A aplicação deve informar para o usuário o dia e horário da coleta do bairro da região                 | ALTA   | 
-| RF-02 |  A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por cores)                  | ALTA   |
-| RF-03  |  A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para facilitar a interação do usuário com o si      | MÉDIO   |
-| RF-04  | A aplicação deve notificar o usuário sobre a localização do agente de coleta                | ALTA   |
-| RF-05  |  A aplicação deve oferecer uma funcionalidade para que o usuário cadastre seu e-mail                 | ALTA   |
-| RF-06  |  A aplicação deve informar sobre os pontos de coleta seletiva próximos ao bairro do morador                 | MÉDIO   |
-| RF-07  |  A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar                  | MÉDIO   |
-| RF-08  |  A aplicação deve fornecer informações sobre descartes especiais (medicamentos, produtos eletrônicos, pneus, resíduos sólidos especiais)                  | ALTA   |
-| RF-09  | A aplicação deve informar como fazer o descarte correto de vidro                  | ALTA   |
-| RF-10  |  A aplicação deve fornecer uma página home em que o usuário poderá ver as informações mais importantes        | ALTA   |
-| RF-11  |   A aplicação deve informar os bairros em que é realizada a coleta seletiva porta a porta         | MÉDIO   |
-| RF-12  |   A aplicação deve ter uma página de perguntas frequentes         | BAIXA   |
+|ID     | Descrição                                                                                                                                  | Prioridade |
+|-------|--------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| RF-01 | A aplicação deve informar para o usuário o dia e horário da coleta do bairro da região                                                     | ALTA      | 
+| RF-02 | A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por co                                             | ALTA       |
+| RF-03 | A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para facilitar a interação do usuário com o si                             | MÉDIA      |
+| RF-04 | A aplicação deve notificar o usuário sobre a localização do agente de coleta                                                               | ALTA       |
+| RF-05 | A aplicação deve oferecer uma funcionalidade para que o usuário cadastre seu e-mail                                                        | ALTA       |
+| RF-06 | A aplicação deve informar sobre os pontos de coleta seletiva próximos ao bairro do morador                                                 | MÉDIA      |
+| RF-07 | A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar                                             | MÉDIA      |
+| RF-08 | A aplicação deve fornecer informações sobre descartes especiais (medicamentos, produtos eletrônicos, pneus, resíduos sólidos especiais)    | ALTA       |
+| RF-09 | A aplicação deve informar como fazer o descarte correto de vidro                                                                           | ALTA       |
+| RF-10 | A aplicação deve fornecer uma página home em que o usuário poderá ver as informações mais importantes                                      | ALTA       |
+| RF-11 | A aplicação deve informar os bairros em que é realizada a coleta seletiva porta a porta                                                    | MÉDIA      |
+| RF-12 | A aplicação deve ter uma página de perguntas frequentes                                                                                    | BAIXA      |
 
 
 **Prioridade: Alta / Média / Baixa. 
@@ -85,10 +85,12 @@
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
 
-|ID      | Descrição               |Prioridade |
-|--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+|ID      | Descrição                                                                                       |Prioridade |
+|--------|-------------------------------------------------------------------------------------------------|-----------|
+| RNF-01 |  A aplicação deve conter uma área de sugestão do usuário                                        | ALTA      | 
+| RNF-02 |  A aplicação deve ser compatível com os navegadores                                             | BAIXO     | 
+| RNF-03 |  A aplicação deve ser acessível a pessoas deficientes                                           | MÉDIA     | 
+| RNF-04 |  A aplicação deve garantir que as informações pessoais e sensíveis do usuário seja protegido    | ALTA      | 
 
 **Prioridade: Alta / Média / Baixa. 
 
