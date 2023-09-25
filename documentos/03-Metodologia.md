@@ -23,7 +23,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 - Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/5c70bd7e-e8fd-4e32-869b-2454f7fcd68c)
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/5c70bd7e-e8fd-4e32-869b-2454f7fcd68c
 
 
 ### Etiquetas
@@ -41,8 +41,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-pr
 </ul>
 
 <figure> 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/349ebee8-489d-4583-8a6c-959a07e01328)
-
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/349ebee8-489d-4583-8a6c-959a07e01328
+</ul>
     
     <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
