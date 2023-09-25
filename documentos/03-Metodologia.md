@@ -30,16 +30,22 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
 
 <ul>
+ 
   <li>Bug (Erro no código)</li>
   <li>Desenvolvimento (Development)</li>
   <li>Documentação (Documentation)</li>
-  <li>Gerência de Projetos (Project Management)</li>
+  <li>Aprimoramento (Enhancement)</li>
   <li>Infraestrutura (Infrastructure)</li>
-  <li>Testes (Tests)</li>
+   <li>Testes (Tests)</li>
+  
 </ul>
 
 <figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/349ebee8-489d-4583-8a6c-959a07e01328)
+
+
+
+    
     <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
   
