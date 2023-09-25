@@ -23,7 +23,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 - Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/5c70bd7e-e8fd-4e32-869b-2454f7fcd68c)
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/5c70bd7e-e8fd-4e32-869b-2454f7fcd68c)
 
 
 ### Etiquetas
@@ -54,11 +54,11 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/blob/main/README.md)                                |
+| Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/blob/main/README.md                                 |
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/tree/main/documentos                                |
-| Projeto de Interface                | Figma                              | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/blob/main/documentos/04-Projeto%20de%20Interface.md)|
-| Gerenciamento do Projeto            | GitHub Projects                    | https://www.figma.com/file/vqQV0RJoFVfrP2yqPdJYwA/Clean-Project?type=design&node-id=0%3A1&mode=design&t=UksogdPPLjR2VK0J-1)               |
-| Hospedagem                          | GitHub Pages                       | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/592)                                                                              |
+| Projeto de Interface                | Figma                              | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/blob/main/documentos/04-Projeto%20de%20Interface.md |
+| Gerenciamento do Projeto            | GitHub Projects                    | https://www.figma.com/file/vqQV0RJoFVfrP2yqPdJYwA/Clean-Project?type=design&node-id=0%3A1&mode=design&t=UksogdPPLjR2VK0J-1                |
+| Hospedagem                          | GitHub Pages                       | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/592                                                                               |
 
 
 ### Estratégia de Organização de Codificação 
