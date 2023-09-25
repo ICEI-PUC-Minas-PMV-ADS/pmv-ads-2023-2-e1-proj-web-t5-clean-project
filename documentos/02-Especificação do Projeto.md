@@ -33,6 +33,7 @@
 <td><b>Necessidades</b></td>
   <td>- Entendimento por parte do usuário/cliente sobre como fazer uma separação correta (principalmente na questão do vidro)
   <br>- Informação sobre uma localização aproximada do agente coletor (caminhão)</td> 
+  <br>- Dar informações atualizadas diariamente sobre mudanças na coleta seletiva</td> 
 </tr>
 </tbody>
 </table>
@@ -43,8 +44,10 @@
 |      EU COMO... `QUEM`      |                                                 QUERO/PRECISO ... `O QUE`                   |                       PARA ... `PORQUE`                                      |
 |-----------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | Eu como morador             | Desejo saber o dia e horário da coleta                                                                 | Para evitar acúmulo de lixo em minha casa                         |
-| Eu como morador             | Quero descartar e separar o lixo em categorias                                                         | Para organizar e descartar o lixo de forma correta                |
+| Eu como morador             | Preciso saber como descartar e separar o lixo em categorias                                            | Para organizar e descartar o lixo de forma correta                |
 | Eu como morador             | Quero saber onde fica o ponto de coleta mais próximo da minha região                                   | Para ter uma segunda opção, caso o agente não passa na rua        |
+| Eu como morador             | Preciso receber updates diários de alterações/mudanças na coleta do m                                  | Para ter uma segunda opção, caso o agente não passa na rua        |
+| Eu como morador             | Preciso receber updates diários de alterações/mudanças na coleta do m                                  | Para ter uma segunda opção, caso o agente não passa na rua        |
 | Eu como agente de coleta    | Quero informar os horários que o caminhão passará nos bairros                                          | Para a otimização do serviço e evitar sobrecarga em dia de coleta |
 | Eu como agente de coleta    | Preciso que o lixo seja separado em categorias                                                         | Para facilitar o tratamento                                       |
 | Eu como agente de coleta    | Preciso que o lixo seja embalado em sacolas resistentes, bem fechadas e de tamanho adequado            | Para evitar que a sacola se abra e espalhe o lixo pelas ruas      |
@@ -53,6 +56,7 @@
 | Eu como agente de coleta    | Gostaria da colaboração dos outros motoristas no trânsito                                              | Para trabalharmos com segurança                                   |
 | Eu como agente de coleta    | Gostaria de receber uma atualização sobre a localização do caminhão de lixo                            | Para colocar o lixo para que ele seja recolhido                   |
 | Eu como agente de coleta    | Gostaria de saber como descartar materiais especiais                                                   | Para facilitar a separação do lixo                                |
+| Eu como agente de coleta    | Gostaria de dar updates sobre as mudanças/alterações da coleta do lixo dos bairros (publicar notícia)  | Para manter os moradores atualizados                              |
 
 
 ## Requisitos do Projeto
@@ -65,7 +69,7 @@
 | RF-02 | A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por cores/categoria)                               | Alta       |
 | RF-03 | A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para facilitar a interação do usuário com o sistema                        | Médio      |
 | RF-04 | A aplicação deve notificar o usuário sobre a localização do agente de coleta                                                               | Alta       |
-| RF-05 | A aplicação deve oferecer uma funcionalidade para que o usuário cadastre seu e-mail e seu endereço                                         | Alta       |
+| RF-05 | A aplicação deve oferecer uma funcionalidade para que o usuário se cadastre                                                                | Alta       |
 | RF-06 | A aplicação deve informar sobre os pontos de coleta seletiva próximos ao bairro do morador                                                 | Médio      |
 | RF-07 | A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar                                             | Médio      |
 | RF-08 | A aplicação deve fornecer informações sobre descartes especiais (medicamentos, produtos eletrônicos, pneus, resíduos sólidos especiais)    | Alta       |
@@ -73,6 +77,12 @@
 | RF-10 | A aplicação deve fornecer uma página home em que o usuário poderá ver as informações mais importantes                                      | Alta       |
 | RF-11 | A aplicação deve informar os bairros em que é realizada a coleta seletiva porta a porta                                                    | Médio      |
 | RF-12 | A aplicação deve ter uma página de perguntas frequentes                                                                                    | Baixa      |
+| RF-13 | A aplicação deve permitir ao agente de coleta publicar notícias                                                                            | Média      |
+| RF-14 | A aplicação deve ter uma página de perfil do usuário (com os dados), configurações e publicar noticia (para o agente de coleta)            | Média      |
+| RF-15 | A aplicação deve ter uma página com um mapa para que o usuário pesquise o seu endereço e veja a localização do agente de coleta            | Alta       |
+
+
+
 
 
 **Prioridade: Alta / Média / Baixa. 
