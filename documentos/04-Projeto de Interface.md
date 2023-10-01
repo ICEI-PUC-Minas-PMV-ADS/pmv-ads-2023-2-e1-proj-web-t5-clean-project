@@ -27,7 +27,7 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/21183500-9169-4bb6-934f-1d2913a4127b)
 
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/692122ad-aaa2-452d-883e-a0ea47dbf254)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/fe6e0425-f2f0-4ad6-bc75-0da28c83617a)
 
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/66f48435-809f-4021-8f0c-fd1fb5fb9477)
