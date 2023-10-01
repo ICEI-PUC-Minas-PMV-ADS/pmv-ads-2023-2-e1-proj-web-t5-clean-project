@@ -21,4 +21,20 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/4d4ff44b-e12c-449a-bf73-cd814128c412)
 
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/aecf57d0-455f-440f-9c72-5accaefe6129)
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/cb0bff9a-6982-4e0b-aab6-4eda822e7cee)
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/2e22e5cf-95ae-436f-af4b-3e1ee6787fde)
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/95e0a729-9c91-4ceb-89d4-7ac861c8e867)
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/4e27502c-c816-4b58-99c7-d658137c77f9)
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/c4b84b2f-cb12-43f7-8ef1-d9ea041706d4)
 
