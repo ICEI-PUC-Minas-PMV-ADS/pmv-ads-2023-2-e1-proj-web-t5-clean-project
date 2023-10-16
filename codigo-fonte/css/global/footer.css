@@ -1,0 +1,53 @@
+footer{
+    background-color: #288397;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Information h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.Information a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    padding: 4px;
+}
+
+.contact h3{
+    text-align: center;
+    padding: 5px;
+}
+
+.contact p{
+    padding: 4px;
+}
+.contact span{
+    font-weight: bold;
+}
+
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media h3{
+    text-align: center;
+    padding: 5px;
+}
+.social-media img{
+    width: 30px;
+    padding: 10px;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
