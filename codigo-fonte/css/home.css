@@ -1,0 +1,54 @@
+@import url(global/header.css);
+@import url(global/footer.css);
+@import url(global/global.css);
+
+:root {
+    --cor-fundo: #FFFF;
+    --cor-principal: #086478;
+    --laranja: #FBA728;
+    --roxo: #892172;
+}
+
+
+body{
+    background-color: var(--cor-fundo);
+    font-weight: 500;
+}
+
+
+.img {
+    height: auto;
+  width: 100%;
+}
+
+.banner {
+    padding: 16px;
+}
+
+.categorias__titulo {
+    text-align: center;
+    color: var(--cor-principal);
+    font-size: 30px;
+}
+
+.categorias__lista{
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    
+}
+
+
+.categorias-texto {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: 24px;
+    font-weight: 500;
+  
+}
+
+.noticias {
+    width: 100%;
+    align-items: center;
+}
+
