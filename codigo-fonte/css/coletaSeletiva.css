@@ -1,0 +1,56 @@
+@import './global/global.css';
+@import './global/header.css';
+@import './global/footer.css';
+
+.container{
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content{
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content::before {
+    content: "" ;
+    position: absolute;
+    background-color: #288397; 
+    
+}
+
+.first__content{
+    display: flex;
+}
+
+.first__collum {
+    text-align: center;
+    flex: 0 auto;
+}
+
+.second__coluum {
+    flex: 2 0 auto;
+
+}
+
+.list social__media {
+    display: flex;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.second__content{
+    position: absolute;
+    display: none;
+}
+
+
