@@ -2,18 +2,29 @@
 @import './global/header.css';
 @import './global/footer.css';
 
-.container{
-    display: flex;
+.containerID{
+    display: grid;
     border: none;
     justify-content: center;
     align-items: center;
+    height: 60vh;
+    width: calc(100% - 16px);
+    margin: 5px;
+}
+
+.first_contID{
+    border: 8px;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    width: calc(90% - 16px);
+    margin: 5px;
 }
 .content{
     border-radius: 15px;
     width: 80%;
     height: 50%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -21,19 +32,18 @@
     content: "" ;
     position: absolute;
     background-color: #288397; 
-    
 }
 
-.first__content{
+.first_divID{
     display: flex;
 }
 
-.first__collum {
+.first_rowID {
     text-align: center;
     flex: 0 auto;
 }
 
-.second__coluum {
+.second_rowID {
     flex: 2 0 auto;
 
 }
