@@ -47,36 +47,42 @@ body{
     align-items: center;
 }
 
-.noticias {
+.duvidas {
     text-align: center;
     color: var(--cor-principal);
     font-size: 30px;
+    padding: 0 2em;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     align-items: center;
 }
-.noticias__quadrado {
-    width: 240px;
-    stroke-width: 1px;
-    stroke: #5C5C5C;
-    height: 182px;
-    background-color: #4F838F;
+
+.duvidas__quadrado {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #f0f4f5;
+    border: 1px solid #A9A9A9;
+    border-radius: 10px;
+    padding: 1em;
+    width: 50%;
+
 }
 
-.noticias__quadrado2 {
-    width: 239px;
-    border: 1px solid;
-    stroke-width: 1px;
-    height: 85px;
-}
-
-.noticias_mais {
+.duvidas__pergunta {
     color: var(--cor-principal);
-    font-size: 26px;
+    font-size: 20px;
+    
 }
+
+.duvidas__resposta {
+    color: #61677A;
+}
+
+
+
 
