@@ -1,0 +1,16 @@
+@import './global/global.css';
+@import './global/header.css';
+@import './global/footer.css';
+
+
+/* BACK UP DO CSS QUE FUNCIONA*/
+.containerID{
+    padding: 0;
+    height: 519px;
+    width: 100%;
+    margin: 0;
+    background: url(../img/mapa/bh.png) ;
+}
+
+
+
