@@ -1,0 +1,42 @@
+/* Associação pelo H2*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color:#288397; 
+}
+
+.container{
+    padding: 3rem;
+}
+
+.row{
+    margin: 2rem 0;
+}
+.row h2{
+    margin: 1rem 0;
+}
+
+.row p{
+    line-height: 1.5rem;
+}
+
+.texto-img{
+
+    display:flex;
+}
+
+
+.img-principal{
+
+display: flex;
+align-items: center;
+
+}
+
+.img-principal img{
+
+aspect-ratio: 173/130;
+    width: 20vw;
+}
