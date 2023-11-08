@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,82 +29,123 @@
         
         
         <nav class="sub-header">
-        <a href="../../../index.html"> <li>Início</li></a>
+        <a href="../home/index.html"> <li>Início</li></a>
         <a href="#"><li>Sobre</li></a>
-        <a href="#"><li>Coleta Seletiva</li></a>
+        <a href="../coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
         <a href="../pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
         </nav>
 
-    </header>
+    </header> 
    
-    <main class="container">
-        <div class="content first__content">
-            <div class="first__collum">
-                <H2 class="title">Bem Vindo(a) de Volta!</H2>
-                <p class="descripition">Para se conectar novamente conosco</p>
-                <p class="descripition">Por favor entre com suas informações pessoais</p>
-                <button class="btn">Entrar</button>
-            </div>
-
-            <div class="second__collum">
-                <h2 class="title">Crie uma conta</h2>
-
-                <div class="social__media">
-                    <ul class="list social__media">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">E-mail</a></li>
-                        <li><a href="#">Twitter</a></li>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem-vindo (a) de volta</h2>
+                <p class="description description-primary">Para se conectar novamente conosco</p>
+                <p class="description description-primary">por favor entre com suas informações pessoais</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar Conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>        
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
                     </ul>
-                </div>
 
-                <p class="descripiton">Utilize seu E-mail para registro.</p>
-
+                </div><!-- social media -->
+                <p class="description description-second">Ou utilize seu E-mail para registro.</p>
                 <form class="form">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Senha">
-                    <button class="btn">Criar Conta</button>
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">Criar Conta</button>        
                 </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá</h2>
+                <p class="description description-primary">Adicione seus dados pessoais</p>
+                <p class="description description-primary">para receber notificações sobre a coleta mais próxima de você</p>
+                <button id="signup" class="btn btn-primary">Criar Conta</button>
             </div>
-        </div>
-
-        <div class="content second__content">
-            <div class="first__collum">
-                <H2 class="title">Olá ^^</H2>
-                <p class="descripition">Adicione seus dados pessoais</p>
-                <p class="descripition">Para receber notificações sobre a coleta mais próxima de você</p>
-                <button class="btn">Criar Conta</button>
-            </div>
-
-            <div class="second__collum">
-                <h2 class="title">Já Possui Conta?</h2>
-
-                <div class="social__media">
-                    <ul class="list social__media">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">E-mail</a></li>
-                        <li><a href="#">Twitter</a></li>
+            <div class="second-column">
+                <h2 class="title title-second">Faça seu Login</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
                     </ul>
-                </div>
-
-                <p class="descripiton">ou utilize seu E-mail para registro.</p>
-
+                </div><!-- social media -->
+                <p class="description description-second">ou utilize seu E-mail para registro:</p>
                 <form class="form">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Senha">
-                    <a href="#">Esqueci Minha Senha</a>
-                    <button class="btn">Entrar</button>
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                
+                    <a class="password" href="#">Esqueci minha senha</a>
+                    <button class="btn btn-second">Entrar</button>
                 </form>
-        </div>
-    </main>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    
     <footer>
         <div class="Information">
             <h3>Atalhos</h3>
-            <a href="sobre-nos.html">Sobre Nós</a>
-            <a href="ponto-de-coleta.html">Ponto de Coleta</a>
-            <a href="coleta-seletiva.html">Coleta Seletiva</a>
-            <a href="mapa.html">Mapa</a>
-            <a href="noticias.html">Notícias</a>
+            <a href="#">Sobre Nós</a>
+            <a href="../pontosDeColeta/pontosDeColeta.html">Ponto de Coleta</a>
+            <a href="../coletaSeletiva/coletaSeletiva.html">Coleta Seletiva</a>
+            <a href="#">Mapa</a>
+            <a href="#">Notícias</a>
         </div>
         
         
@@ -120,7 +161,9 @@
             <a href="#"><img src="../../img/footer/instagram.png" alt="icon instagram branco vazado">Nos siga no Instagram</a></a></a>
             <a href="#"><img src="../../img/footer/twitter (2).png" alt="icon twitter branco vazado">Fique por dentro das novidades no nosso Twitter</a></a></a>
         </div>
-    </footer>
+    </footer> 
+    
+    <script src="../../js/cadastro.js"></script>
 </body>
 
 
