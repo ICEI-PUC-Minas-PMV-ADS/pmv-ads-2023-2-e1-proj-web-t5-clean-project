@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/cadastro.css">
     <title>Login/Cadastro</title>
-    
+    <script src="https://kit.fontawesome.com/4a5b28377f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                         </a>
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
-                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fa-brands fa-google"></i>
                             </li>
                         </a>
                         <a class="link-social-media" href="#">
@@ -70,21 +70,21 @@
                 <form class="form">
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome" >
+                        <input type="text" id="nome" placeholder="Nome"  >
                     </label>
                     
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail">
+                        <input type="email" id="email" placeholder="E-mail" >
                     </label>
                     
-                    <label class="label-input" for="">
+                    <label class="label-input" for="password">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" id="password" placeholder="Senha">
+
                     </label>
                     
-                    
-                    <button class="btn btn-second">Criar Conta</button>        
+                    <input type="submit" id="submit" onclick="cadastrarUsuario(nome, email, senha); return false">
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
@@ -107,7 +107,7 @@
                         </a>
                         <a class="link-social-media" href="#">
                             <li class="item-social-media">
-                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fa-brands fa-google"></i>
                             </li>
                         </a>
                         <a class="link-social-media" href="#">
@@ -122,7 +122,7 @@
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail" id="Email">
+                        <input type="email" placeholder="E-mail" id="Login">
                     </label>
                 
                     <label class="label-input" for="">
@@ -130,7 +130,7 @@
                         <input type="password" placeholder="Senha" id="Senha">
                     </label>
                     <a class="password" href="#">Esqueci minha senha</a>
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit" onclick="logar(); return false">
                 
                    
                 </form>
