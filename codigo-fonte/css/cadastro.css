@@ -73,12 +73,12 @@
     background-color: #fff;
     color: #288397;
 }
-.btn-second {
+#submit {
     background-color: #288397;
     border: 1px solid #288397;
     transition: background-color .5s;
 }
-.btn-second:hover {
+#submit:hover {
     background-color: #fff;
     border: 1px solid #288397;
     color: #288397;
