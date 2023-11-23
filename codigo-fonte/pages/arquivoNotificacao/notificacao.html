@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Formulário de Notificação por E-mail</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Envie uma Notificação por E-mail</h1>
-    <form action="enviar_email.php" method="post">
-        <label for="destinatario">Para:</label>
-        <input type="email" name="destinatario" required><br>
 
-        <label for="assunto">Assunto:</label>
-        <input type="text" name="assunto" required><br>
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea name="mensagem" required></textarea><br>
-
-        <input type="submit" value="Enviar Notificação">
-    </form>
+<button onclick="Notificacao()">Enviar Notificação</button>
+<script>
+    function Notificacao() {
+      window.alert(" Seu dia da coleta é: Segunda, Quanta e Sexta.");
+    }
+    </script>
 </body>
 </html>

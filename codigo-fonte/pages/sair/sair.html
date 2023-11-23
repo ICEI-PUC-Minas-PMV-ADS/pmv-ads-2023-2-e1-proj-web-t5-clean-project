@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <nav class="sub-header">
+        <a href="../../pages/home/index.html"> <li>Início</li></a>
+        <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre Nós</li></a>
+        <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
+        <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
+        <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
+        <a href="../../pages/cadastro/cadastro.html"><li>Cadastro</li></a>
+        </nav>
+    </header>
+
+</head>
+<body>
+
+
+    <!-- Conteúdo da página de cadastro -->
+    <div id="formCadastro">
+        <!-- Seu formulário de cadastro aqui -->
+        <button onclick="criarConta()">Criar Conta </button>
+        <a href="../../pages/cadastro/cadastro.html"><li>Cadastro</li></a>
+    </div>
+
+    <div id="areaSair" style="display: none;">
+        <button onclick="sairDaPaginaCadastro()">Sair</button>
+    </div>
+
+    <script>
+        function criarConta() {
+            // Lógica de processamento do cadastro aqui
+
+            // Exibe o botão "Sair" após o cadastro ser concluído com sucesso
+            document.getElementById('formCadastro').style.display = 'none';
+            document.getElementById('areaSair').style.display = 'block';
+        }
+
+        function sairDaPaginaCadastro() {
+            window.location.href = '../../pages/home/index.html';
+        }
+    </script>
+</body>
+</html>
