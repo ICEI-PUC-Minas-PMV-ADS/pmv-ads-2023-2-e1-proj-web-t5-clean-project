@@ -1,3 +1,46 @@
 @import './global/global.css';
 @import './global/header.css';
 @import './global/footer.css';
+
+.carrossel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carrossel-container {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Adicione estilos para as setas */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .left-arrow {
+    left: 0;
+  }
+  
+  .right-arrow {
+    right: 0;
+  }
+  
+  
