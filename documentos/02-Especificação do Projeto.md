@@ -72,7 +72,7 @@
 | RF-05 | A aplicação deve fornecer informações sobre descartes especiais (medicamentos, produtos eletrônicos, pneus, resíduos sólidos especiais)    | Alta       |
 | RF-06 | A aplicação deve informar como fazer o descarte correto de vidro                                                                           | Alta       |
 | RF-07 | A aplicação deve fornecer uma página home em que o usuário poderá ver as informações mais importantes                                      | Alta       |
-| RF-08 | A aplicação deve conter dúvidas frequentes                                                                               | Baixa      |
+| RF-08 | A aplicação deve conter dúvidas frequentes na tela Home                                                                              | Baixa      |
 | RF-09 | A aplicação deve ter uma página de perfil do usuário (com os dados) e configurações            | Média      |
 | RF-10 | A aplicação deve ter uma página com um mapa para que o usuário pesquise o seu endereço e veja a localização do agente de coleta            | Alta       |
 | RF-11 | A aplicação deve oferecer uma funcionalidade para que o usuário faça login                                                           | Alta    
