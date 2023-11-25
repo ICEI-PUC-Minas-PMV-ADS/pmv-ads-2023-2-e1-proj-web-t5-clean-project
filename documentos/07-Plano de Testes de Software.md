@@ -67,5 +67,113 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
  </tr>
 </table>
 
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-03: Verificar se os usuários conseguem fazer o cadastro</td>
+  <td>
+  <ul>
+    <li>RF-O2 : A aplicação deve oferecer uma funcionalidade para que o usuário se cadastre</li>
+    <li> RF-11: A aplicação deve oferecer uma funcionalidade para que o usuário faça login</li>
+    </ul>
+  </td>
+  <td>Verificar a funcionalidade da página de login/cadastro
+ <li>LOGIN
+ Alternância de Abas
+Verificar se é possível fazer login com credenciais válidas
+Testar o login com credenciais inválidas
+Mensagem de Confirmação
+Mensagem de usuário não encontrado
+Mensagem de senha ou E-mail incorretos
+Validação de Entrada
+Testar o redirecionamento para a página correta após o Login (home)</li>
+<li>CADASTRO
+Garantir que a validação de campos esteja funcionando
+Mensagem de erro ao tentar cadastrar sem preencher todos os campo
+Testa o redirecionamento para a página correta após cadastro </li>
+<li>TESTE DE USABILIDADE:
+Avaliar a facilidade de uso da interface de login e cadastro.
+Testar a clareza das mensagens de erro e orientações para o usuário.
+Se ao clicar no ícone de olho, a senha fica visível para o usuário</li>
+</td>
+  <td>
+   <ol>
+   <li>Acessar a página de Login/Cadastro</li>
+    <li>Preencher os campos (Nome, email, senha e confirmação de senha) com credenciais válidas e não válidas</li>
+    <li>Enviar o formulário sem preencher todos os campos</li>
+    <li>Confirmar cadastro/login</li>
+    </ol>
+   </td>
+  <td>Mensagem de confirmação de login/cadastro ou de erro caso falte algum campo para preencher ou de usuário não existente. Após a confirmação redirecionar para página Home</td>
+  <td>Maria Julia</td>
+ </tr>
+</table>
 
-
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-04: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo</td>
+  <td>
+  <ul>
+    <li> </li>
+    </ul>
+  </td>
+  <td>Verificar se o carrossel funciona sozinho e o campo de busca mostra os pontos de coleta e se é possível filtrar por tipo de lixo
+ <li>Carrossel:
+Funcionamento automático e manual:
+Testar se o carrossel avança automaticamente pelos slides.
+Verificar se é possível navegar manualmente entre os slides.
+Confirmar se todas as 6 imagens estão aparecendo no carrossel.
+</li>
+<li>Campo de Busca:
+Filtro por tipo de lixo:
+Testar a funcionalidade de filtrar por diferentes tipos de lixo (reciclável, orgânico, isopor, vidro, hospitalar e eletrônico).
+Verificar se os resultados são exibidos corretamente com base no filtro aplicado.
+Campo de busca funcional:
+Garantir que seja possível buscar por locais de coleta por cidade.
+Verificar se as informações dos postos de coleta são exibidas ao buscar pela cidade de Belo Horizonte.
+Mensagem de erro para cidade diferente de Belo Horizonte:
+Testar ao inserir uma cidade diferente de Belo Horizonte e verificar se uma mensagem de erro é exibida adequadamente.
+ </li>
+<li>TESTE DE USABILIDADE:
+Clareza das mensagens:
+Avaliar se as mensagens de erro são claras e informativas para o usuário.
+Orientações para o usuário:
+Verificar se as instruções fornecidas são suficientes para orientar o usuário sobre como usar o campo de busca e o filtro.
+</li>
+</td>
+  <td>
+   <ol>
+   <li>Acessar a página de Pontos de Coleta</li>
+    <li>Verificar o funcionamento do carrossel.</li>
+    <li>Preencher o campo de busca com "Belo Horizonte" e observar os resultados.</li>
+    <li>Testar o filtro por diferentes tipos de lixo</li>
+    <li>Inserir uma cidade diferente de Belo Horizonte para verificar a mensagem de erro</li>
+    </ol>
+   </td>
+  <td>
+   <ol>
+    <li>O carrossel avança automaticamente e permite navegação manual.</li>
+    <li>Todas as 6 imagens são apresentadas no carrossel.</li>
+    <li>O campo de busca permite filtrar por tipos de lixo e por cidade.</li>
+    <li>As informações dos postos de coleta são exibidas corretamente com base nos filtros aplicados.</li>
+    <li>Mensagens de erro são claras e informativas</li>
+    <li>As instruções fornecidas são suficientes para orientar o usuário.</li>
+   </td>
+  <td>Maria Julia</td>
+ </tr>
+</table>
