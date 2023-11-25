@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/cadastro.css">
     <title>Login/Cadastro</title>
     <script src="https://kit.fontawesome.com/4a5b28377f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -69,23 +70,30 @@
                 </div><!-- social media -->
                 <p class="description description-second">Ou utilize seu E-mail para registro.</p>
                 <form class="form">
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="labelNome">
                         <i class="far fa-user icon-modify"></i>
                         <input type="text" id="nome" placeholder="Nome"  >
+                        
                     </label>
                     
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="laberEmail">
                         <i class="far fa-envelope icon-modify"></i>
                         <input type="email" id="email" placeholder="E-mail" >
                     </label>
                     
-                    <label class="label-input" for="password">
+                    <label class="label-input" for="password" id="labelSenha1">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" id="password" placeholder="Senha">
-
+                        <input type="password" placeholder="Senha" id="senha1">
+                        <i class="fa fa-eye eyeIcon" aria-hidden="true" data-target="senha1"></i>
                     </label>
                     
-                    <input type="submit" id="submit" onclick="cadastrarUsuario(nome, email, senha); return false">
+                    <label class="label-input" for="password" id="labelConfirmSenha">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Confirmar senha" id="confirmSenha">
+                        <i class="fa fa-eye eyeIcon" aria-hidden="true" data-target="ConfirmSenha"></i>
+                    </label>
+                    
+                    <input type="submit" id="submit" onclick="cadastrar()">
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
@@ -123,13 +131,16 @@
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail" id="Login">
+                        <input type="email" placeholder="E-mail" id="email">
                     </label>
                 
-                    <label class="label-input" for="">
+                    <label class="label-input" for="password">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha" id="Senha">
+                        <input type="password" placeholder="Senha" id="senha2">
+                        <i class="fa fa-eye eyeIcon" aria-hidden="true" data-target="senha2"></i>
                     </label>
+                    
+                    
                     <a class="password" href="#">Esqueci minha senha</a>
                     <input type="submit" id="submit" onclick="logar(); return false">
                 

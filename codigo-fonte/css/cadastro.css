@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130vh;
+    height: 170vh;
     background-color: #ecf0f1;
 }
 .content {
@@ -51,6 +51,9 @@
 .description-second {
     color: #288397;
 }
+
+
+
 .btn {
     border-radius: 15px;
     text-transform: uppercase;
@@ -149,6 +152,13 @@
     border: none;
     background-color: #ecf0f1;
 }
+
+.fa-eye{
+    position: end;
+    padding: 8px;
+    color: #7f8c8d;
+    cursor: pointer;
+}
 input:-webkit-autofill 
 {    
     -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
@@ -159,6 +169,9 @@ input:-webkit-autofill
     display: flex;
     align-items: center;
     margin: 8px;
+    width: 100%;
+    padding: 3px;
+    border-radius: 6px;
 }
 .icon-modify {
     color: #7f8c8d;
@@ -246,6 +259,16 @@ input:-webkit-autofill
     z-index: -1;
     animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
 
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
 

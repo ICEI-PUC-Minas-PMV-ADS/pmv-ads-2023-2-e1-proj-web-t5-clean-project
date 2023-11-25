@@ -2,7 +2,6 @@ window.addEventListener('load', trocarCadastrarPorSair);
 //  Transição
 const btnSignin = document.querySelector("#signin");
 const btnSignup = document.querySelector("#signup");
-
 const body = document.querySelector("body");
 
 btnSignin.addEventListener("click", function () {
@@ -111,3 +110,32 @@ formCadastro.addEventListener("submit", function (event) {
 
   alert("Usuário cadastrado com sucesso!");
 });
+
+function togglePasswordVisibility(inputId) {
+    const inputSenha = document.getElementById(inputId);
+
+    if (inputSenha.getAttribute('type') === 'password') {
+        inputSenha.setAttribute('type', 'text');
+    } else {
+        inputSenha.setAttribute('type', 'password');
+    }
+}
+    const inputSenha = document.getElementById(inputId);
+
+    if (inputSenha.getAttribute('type') === 'password') {
+        inputSenha.setAttribute('type', 'text');
+    } else {
+        inputSenha.setAttribute('type', 'password');
+    }
+
+//cadastraar Usuário
+
+nome.addEventListener('blur', () => {
+    const nomeValue = nome.value.trim();
+    
+        if (nomeValue.length < 3) {
+            labelNome.textContent = 'O nome deve ter no mínimo 3 caracteres';
+            nome.focus();
+        }
+    });
+    
