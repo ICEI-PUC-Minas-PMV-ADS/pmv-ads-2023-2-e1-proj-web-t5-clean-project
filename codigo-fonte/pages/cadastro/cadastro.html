@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/cadastro.css">
     <title>Login/Cadastro</title>
     <script src="https://kit.fontawesome.com/4a5b28377f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,11 +22,7 @@
             <a href="../editarCadastro/editarCadastro.html"><img src="../../img/header/usuario.png" alt="Icone Usuário" class="icon"></a>
             <span>
                 <span class="ola">Olá!</span><br>
-<<<<<<< HEAD
                 Faça seu <a href="../../pages/cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
-=======
-                Faça seu <a href="../cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
->>>>>>> e99173ed8a92b1fdb8041ba8844707bf7b196e22
                 notificações sobre a coleta seletiva da sua rua
             
             </span>
@@ -33,11 +30,7 @@
         </div>
         <nav class="sub-header">
         <a href="../../pages/home/index.html"> <li>Início</li></a>
-<<<<<<< HEAD
         <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre Nós</li></a>
-=======
-        <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre</li></a>
->>>>>>> e99173ed8a92b1fdb8041ba8844707bf7b196e22
         <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
         <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
         <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
@@ -77,23 +70,30 @@
                 </div><!-- social media -->
                 <p class="description description-second">Ou utilize seu E-mail para registro.</p>
                 <form class="form">
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="labelNome">
                         <i class="far fa-user icon-modify"></i>
                         <input type="text" id="nome" placeholder="Nome"  >
+                        
                     </label>
                     
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="laberEmail">
                         <i class="far fa-envelope icon-modify"></i>
                         <input type="email" id="email" placeholder="E-mail" >
                     </label>
                     
-                    <label class="label-input" for="password">
+                    <label class="label-input" for="password" id="labelSenha1">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" id="password" placeholder="Senha">
-
+                        <input type="password" placeholder="Senha" id="senha1">
+                        <i class="fa fa-eye eyeIcon" aria-hidden="true" data-target="senha1"></i>
                     </label>
                     
-                    <input type="submit" id="submit" onclick="cadastrarUsuario(nome, email, senha); return false">
+                    <label class="label-input" for="password" id="labelConfirmSenha">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Confirmar senha" id="confirmSenha">
+                        <i class="fa fa-eye eyeIcon" aria-hidden="true" data-target="ConfirmSenha"></i>
+                    </label>
+                    
+                    <input type="submit" id="submit" onclick="cadastrar()">
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
@@ -131,13 +131,16 @@
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail" id="Login">
+                        <input type="email" placeholder="E-mail" id="email">
                     </label>
                 
-                    <label class="label-input" for="">
+                    <label class="label-input" for="password">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha" id="Senha">
+                        <input type="password" placeholder="Senha" id="senha2">
+                        <i class="fa fa-eye eyeIcon" aria-hidden="true" data-target="senha2"></i>
                     </label>
+                    
+                    
                     <a class="password" href="#">Esqueci minha senha</a>
                     <input type="submit" id="submit" onclick="logar(); return false">
                 
@@ -150,19 +153,11 @@
     <footer>
         <div class="Information">
             <h3>Atalhos</h3>
-<<<<<<< HEAD
             <a href="../../pages/home/index.html"> <li>Início</li></a>
             <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre Nós</li></a>
             <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
             <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
             <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
-            <a href="../../pages/cadastro/cadastro.html"><li>Cadastro</li></a>
-=======
-            <a href="../sobreNos/sobreNos.html">Sobre Nós</a>
-            <a href="../pontosDeColeta/pontosDeColeta.html">Ponto de Coleta</a>
-            <a href="../coletaSeletiva/coletaSeletiva.html">Coleta Seletiva</a>
-            <a href="../mapa/mapa.html">Mapa</a>
->>>>>>> e99173ed8a92b1fdb8041ba8844707bf7b196e22
         </div>
         
         

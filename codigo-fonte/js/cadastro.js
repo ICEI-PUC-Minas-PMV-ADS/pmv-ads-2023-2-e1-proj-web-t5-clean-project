@@ -1,10 +1,23 @@
-//  Transição
+
 const btnSignin = document.querySelector("#signin");
 const btnSignup = document.querySelector("#signup");
-
 const body = document.querySelector("body");
 
+const eyeIcons = document.querySelectorAll('.eyeIcon');
+/* 
+const nome = document.querySelector('#nome'); */
+const labelNome = document.querySelector('#labelNome');
 
+const email = document.querySelector('#email');
+const labelEmail = document.querySelector('#labelEmail');
+
+const senha1 = document.querySelector('#senha1');
+const labelSenha = document.querySelector('#labelSenha1');
+
+const confirmSenha = document.querySelector('#confirmSenha');
+const labelConfirmSenha = document.querySelector('#labelConfirmSenha');
+
+//  Transição
 btnSignin.addEventListener("click", function () {
    body.className = "sign-in-js"; 
 });
@@ -13,76 +26,40 @@ btnSignup.addEventListener("click", function () {
     body.className = "sign-up-js";
 })
 
-//Validação 
-const emailInput = document.querySelector('input[type="email"]');
-    const passwordInput = document.querySelector('input[type="password"]');
-    const form = document.querySelector('form');
+// Função para alternar a visibilidade da senha
 
-    form.addEventListener('submit', function (e) {
-        if (emailInput.value === '' || passwordInput.value === '') {
-            e.preventDefault(); 
-            alert('Por favor, preencha todos os campos.');
-        }
-    }
-)
-
-function logar(){
-    const login = document.getElementById('Login').value;
-    const senha = document.getElementById('Senha').value;
-
-    fetch('../../json/usuários.json')
-    .then(response =>{
-        if(!response.ok){
-            throw new Error ('Erro ao carregar usuário');
-        }
-        return response.json();
-    })
-
-    .then(usuarios => {
-        const usuarioEncontrado = usuarios.find(usuario => usuario.email === login && usuario.senha === senha);
-
-        if (usuarioEncontrado){
-            alert('Sucesso!');
-            location.href = '../home/index.html'
-        } else {
-            alert('Usuário ou senha incorretos!')
-        }
-    })
-
-    .catch(error => console.error('Erro:', error));
-}
-
-// Função para cadastrar um novo usuário
-function cadastrarUsuario(nome, email, senha) {
-    const novoUsuario = {
-        nome: nome,
-        email: email,
-        senha: senha,
-    };
-
-    let usuarios = localStorage.getItem('usuarios');
-    usuarios = usuarios ? JSON.parse(usuarios) : [];
-
-    usuarios.push(novoUsuario);
-
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
-    window.location.href = '../home/index.html';
-}
-
-
-const formCadastro = document.querySelector('.form');
-
-
-formCadastro.addEventListener('submit', function (event) {
-    event.preventDefault(); 
-
-    
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('password').value;
-
-    
-    cadastrarUsuario(nome, email, senha);
-
-    alert('Usuário cadastrado com sucesso!');
+eyeIcons.forEach(icon => {
+    icon.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        togglePasswordVisibility(targetId);
+    });
 });
+
+function togglePasswordVisibility(inputId) {
+    const inputSenha = document.getElementById(inputId);
+
+    if (inputSenha.getAttribute('type') === 'password') {
+        inputSenha.setAttribute('type', 'text');
+    } else {
+        inputSenha.setAttribute('type', 'password');
+    }
+}
+    const inputSenha = document.getElementById(inputId);
+
+    if (inputSenha.getAttribute('type') === 'password') {
+        inputSenha.setAttribute('type', 'text');
+    } else {
+        inputSenha.setAttribute('type', 'password');
+    }
+
+//cadastraar Usuário
+
+nome.addEventListener('blur', () => {
+    const nomeValue = nome.value.trim();
+    
+        if (nomeValue.length < 3) {
+            labelNome.textContent = 'O nome deve ter no mínimo 3 caracteres';
+            nome.focus();
+        }
+    });
+    
