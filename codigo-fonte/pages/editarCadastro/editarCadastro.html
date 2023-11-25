@@ -129,7 +129,7 @@
 
 <script src="../../js/editarCadastro.js"></script>
 
-<script>
+<!-- <script>
     function handleCheckboxClick(clickedCheckboxId, otherCheckboxId) {
         var clickedCheckbox = document.getElementById(clickedCheckboxId);
         var otherCheckbox = document.getElementById(otherCheckboxId);
@@ -214,8 +214,26 @@
 
         // Carregar dados ao carregar a página
         carregarDados();
+
+        function carregarDadosDoJSON() {
+                fetch("../../json/usuarios.json")  
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('nomeInput').value = data.nome;
+                        document.getElementById('exibicaoInput').value = data.exibicao;
+                        document.getElementById('emailInput').value = data.email;
+                        document.getElementById('enderecoInput').value = data.endereco;
+                    })
+                    .catch(error => console.error('Erro ao carregar dados do JSON:', error));
+            }
+
+            // Carregar dados ao carregar a página
+            carregarDadosDoJSON();
+    
     });
-</script>
+</script> -->
+
+
 
 </body>
 
