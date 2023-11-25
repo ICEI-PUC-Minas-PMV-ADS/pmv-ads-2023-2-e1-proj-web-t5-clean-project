@@ -97,6 +97,28 @@
     border: 1px solid #288397;
     color: #288397;
 }
+
+#submit2 {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    background-color: #288397;
+    border: 1px solid #288397;
+    transition: background-color .5s;
+}
+#submit2:hover {
+    background-color: #fff;
+    border: 1px solid #288397;
+    color: #288397;
+}
 .first-content {
     display: flex;
 }

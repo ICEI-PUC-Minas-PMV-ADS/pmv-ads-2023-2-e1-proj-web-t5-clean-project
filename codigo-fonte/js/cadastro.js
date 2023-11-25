@@ -4,18 +4,23 @@ const btnSignup = document.querySelector("#signup");
 const body = document.querySelector("body");
 
 const eyeIcons = document.querySelectorAll('.eyeIcon');
-/* 
-const nome = document.querySelector('#nome'); */
+
+/* const nome = document.querySelector('#nome');
 const labelNome = document.querySelector('#labelNome');
+const validNome = false
 
 const email = document.querySelector('#email');
 const labelEmail = document.querySelector('#labelEmail');
+const validEmail = false
 
 const senha1 = document.querySelector('#senha1');
 const labelSenha = document.querySelector('#labelSenha1');
+const validSenha1 = false
+
 
 const confirmSenha = document.querySelector('#confirmSenha');
 const labelConfirmSenha = document.querySelector('#labelConfirmSenha');
+const validConfirmSenha = false */
 
 //  Transição
 btnSignin.addEventListener("click", function () {
@@ -52,14 +57,28 @@ function togglePasswordVisibility(inputId) {
         inputSenha.setAttribute('type', 'password');
     }
 
-//cadastraar Usuário
+//LOGIN Usuário
 
-nome.addEventListener('blur', () => {
-    const nomeValue = nome.value.trim();
-    
-        if (nomeValue.length < 3) {
-            labelNome.textContent = 'O nome deve ter no mínimo 3 caracteres';
-            nome.focus();
-        }
-    });
-    
+function logar() {
+    const email = document.getElementById('email2').value.trim(); 
+    const senha = document.getElementById('senha2').value.trim(); 
+
+    fetch('../../json/usuarios.json') 
+        .then(response => response.json()) 
+        .then(users => {
+            console.log(users); 
+            const user = users.find(u => u.email.trim() === email && u.senha.trim() === senha);
+
+            if (user) {
+                alert(`Bem-vindo, ${user.nome}! Login bem-sucedido.`);
+                setTimeout(function() {
+                    window.location.href = '../../pages/home/index.html'; 
+                }, 2000); 
+            } else {
+                alert('Credenciais inválidas. Tente novamente.');
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao carregar os usuários:', error);
+        });
+}
