@@ -67,3 +67,35 @@ RF-07: A aplicação deve fornecer uma página home em que o usuário poderá ve
 Letícia Pires Lopes de Souza
 
 <hr>
+
+### Tela 
+
+
+
+
+
+#### Requisito atendido
+
+
+
+
+#### Artefatos da funcionalidade
+
+
+
+
+#### Estrutura de Dados
+
+
+
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+
+
+<hr>
