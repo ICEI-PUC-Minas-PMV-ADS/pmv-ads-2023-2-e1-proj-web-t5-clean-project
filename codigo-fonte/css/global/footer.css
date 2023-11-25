@@ -51,3 +51,71 @@ footer{
     align-items: center;
     padding: 4px;
 }
+
+@media screen and (max-width: 650px) {
+    .containerID {
+      height: 643px;
+      width: 100%;
+    }
+  
+    #map {
+      height: 100%;
+    }
+  
+    .search-container {
+      width: 70%;
+      height: 80px;
+    }
+  
+    .tabs {
+      height: 55%;
+      margin-top: 2px;
+    }
+  
+    .tab {
+      flex: 1;
+      padding: 10px;
+      font-size: 65%;
+    }
+  
+    .tab-content {
+      padding: 20px;
+    }
+  
+    .search-box {
+      width: 95%;
+      height: 40%;
+      ;
+      margin: 3px;
+    }
+  
+    .Information h3 {
+      font-size: 15px;
+    }
+  
+    .Information a {
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .contact h3 {
+      font-size: 15px;
+    }
+  
+    .contact p {
+          font-size: 12px;
+    }
+  
+    .social-media h3 {
+      font-size: 15px;
+    }
+  
+    .social-media img {
+      width: 25px;
+    }
+  
+    .social-media a {
+      padding: 4px;
+      font-size: 12px;
+    }
+  }

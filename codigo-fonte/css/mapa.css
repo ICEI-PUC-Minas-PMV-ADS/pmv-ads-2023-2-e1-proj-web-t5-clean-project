@@ -4,17 +4,109 @@
 
 
 /* BACK UP DO CSS QUE FUNCIONA*/
-.containerID{
-    border: none;
-    padding: 0;
-    height: 600px;
-    width: 90%;
-    margin: 0;
+.containerID {
+  position: relative;
+  border: none;
+  padding: 0;
+  height: 624px;
+  width: 100%;
+  margin: 0;
 }
 
-#map{
+#map {
+  position: relative;
+  width: 100%;
+  height: 624px;
+  z-index: 1;
+}
+
+.search-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  background-color: rgb(139, 139, 139);
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #3498db;
+  border-bottom: none;
+  background-color: #288397;
+}
+
+.tab:hover {
+  background-color: #2980b9;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 12px 12px;
+  background-color: #fff;
+}
+
+.search-box {
+  width: calc(100% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .containerID {
+    height: 643px;
     width: 100%;
-    height:100%;
-    margin-left: 35px;
-}
+  }
 
+  #map {
+    height: 100%;
+  }
+
+  .search-container {
+    width: 70%;
+    height: 80px;
+  }
+
+  .tabs {
+    height: 55%;
+    margin-top: 2px;
+  }
+
+  .tab {
+    flex: 1;
+    padding: 10px;
+    font-size: 65%;
+  }
+
+  .tab-content {
+    padding: 20px;
+  }
+
+  .search-box {
+    width: 95%;
+    height: 40%;
+  
+    margin: 3px;
+  }
+}

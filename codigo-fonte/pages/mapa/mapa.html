@@ -22,35 +22,66 @@
                 <img src="../../img/header/usuario.png" alt="Icone Usuário" class="icon">
                 <span>
                     <span class="ola">Olá!</span><br>
-                    Faça seu <a href="./coletaSeletiva.html" class="cadastro">cadastro</a> para receber <br>
+                    Faça seu <a href="./../cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
                     notificações sobre a coleta seletiva da sua rua
                 </span>
             </div>
         </div>
         <nav class="sub-header">
             <a href="../../pages/home/index.html">
-                <li>Início</li>
+                Início
             </a>
             <a href="../../pages/sobreNos/sobreNos.html">
-                <li>sobre Nos</li>
+                Sobre Nos
             </a>
             <a href="../../pages/coletaSeletiva/coletaSeletiva.html">
-                <li>Coleta Seletiva</li>
+                Coleta Seletiva
             </a>
             <a href="../../pages/pontosDeColeta/pontosDeColeta.html">
-                <li>Pontos de Coleta</li>
-            </a>
-            <a href="../../pages/mapa/mapa.html">
-                <li>Mapa</li>
-            </a>
-            <a href="../../pages/cadastro/cadastro.html">
-                <li>Cadastro</li>
+                Pontos de Coleta
             </a>
         </nav>
     </header>
 
     <main class="containerID">
         <!-- elemento div do mapa. é necessário definir um id para o elemento -->
+
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Digite o endereço">
+
+            <div class="tabs">
+                <div class="tab" onclick="openTab('endereco')">Endereço</div>
+                <div class="tab" onclick="openTab('enderecoAvancado')">Endereço Avançado</div>
+                <div class="tab" onclick="openTab('bairro')">Bairro</div>
+                <div class="tab" onclick="openTab('cep')">CEP</div>
+                <div class="tab" onclick="openTab('filtro')">Filtro</div>
+            </div>
+
+            <div id="endereco" class="tab-content">
+                <!-- Conteúdo da aba Endereço -->
+                Conteúdo da aba Endereço.
+            </div>
+
+            <div id="enderecoAvancado" class="tab-content">
+                <!-- Conteúdo da aba Endereço Avançado -->
+                Conteúdo da aba Endereço Avançado.
+            </div>
+
+            <div id="bairro" class="tab-content">
+                <!-- Conteúdo da aba Bairro -->
+                Conteúdo da aba Bairro.
+            </div>
+
+            <div id="cep" class="tab-content">
+                <!-- Conteúdo da aba CEP -->
+                Conteúdo da aba CEP.
+            </div>
+
+            <div id="filtro" class="tab-content">
+                <!-- Conteúdo da aba Filtro -->
+                Conteúdo da aba Filtro.
+            </div></div>
+
         <div id="map"></div>
 
         <script type="text/javascript"
