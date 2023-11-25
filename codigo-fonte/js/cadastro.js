@@ -82,3 +82,44 @@ function logar() {
             console.error('Erro ao carregar os usuários:', error);
         });
 }
+
+function cadastrar() {
+    const email = document.getElementById('email').value.trim();
+    const senha = document.getElementById('senha1').value.trim();
+    const confirmarSenha = document.getElementById('confirmSenha').value.trim();
+
+    if (email === '' || senha === '' || confirmarSenha === '') {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    // Validação para verificar se as senhas coincidem
+    if (senha !== confirmarSenha) {
+        alert('As senhas não coincidem. Por favor, insira senhas iguais.');
+        return;
+    }
+
+
+    // Criar um novo usuário
+    const novoUsuario = {
+        "email": email,
+        "senha": senha
+    };
+
+    fetch('../../json/usuarios.json')
+        .then(response => response.json())
+        .then(users => {
+            // Adicionar o novo usuário à lista existente
+            users.push(novoUsuario);
+
+            console.log(users);
+
+            alert('Cadastro realizado com sucesso!');
+
+            // Redirecionar para a página de login ou para outra página após o cadastro
+            window.location.href = '../../pages/home/index.html'; 
+        })
+        .catch(error => {
+            console.error('Erro ao carregar os usuários:', error);
+        });
+}
