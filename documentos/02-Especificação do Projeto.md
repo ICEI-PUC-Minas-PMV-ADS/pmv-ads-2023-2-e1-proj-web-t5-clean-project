@@ -76,6 +76,8 @@
 | RF-09 | A aplicação deve ter uma página de perfil do usuário (com os dados) e configurações            | Média      |
 | RF-10 | A aplicação deve ter uma página com um mapa para que o usuário pesquise o seu endereço e veja a localização do agente de coleta            | Alta       |
 | RF-11 | A aplicação deve oferecer uma funcionalidade para que o usuário faça login                                                           | Alta    
+| RF-12 | A aplicação deve oferecer uma funcionalidade para que o usuário saia do seu perfil     | Alta    
+| RF-13 | A aplicação deve oferecer uma funcionalidade em que o usuário pode clicar no botão e ser notificado quanto ao dia de coleta                             | Alta   
 
 **Prioridade: Alta / Média / Baixa. 
 
