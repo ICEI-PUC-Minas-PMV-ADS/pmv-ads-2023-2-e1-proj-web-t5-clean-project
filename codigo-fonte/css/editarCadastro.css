@@ -112,8 +112,7 @@
 }
 
 .social__media{
-border: 1px solid red;
-
+/* border: 1px solid red; */
 }
 
 .checkbox{
@@ -123,7 +122,63 @@ color: grey;
 
 }
 
+.list.social__media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
 
+.list.social__media label {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.list.social__media input {
+    margin-right: 5px;
+}
+
+.btnSave{
+    border:none;
+    margin: 3px;
+    width: 112px;
+    font-size: medium;
+    background-color: #288393;
+    color: white;
+    border-radius: 20px;
+    height: 28px;
+    /* border: solid magenta; */
+    user-select: none;
+    cursor: pointer;
+    transition: background 1s;
+    
+
+}
+
+.btnExcluir{
+    border:none;
+    margin: 3px;
+    width: 112px;
+    font-size: medium;
+    background-color: #288393;
+    color: white;
+    border-radius: 20px;
+    height: 28px;
+    /* border: solid magenta; */
+    user-select: none;
+    cursor: pointer;
+    transition: background 1s;
+    
+
+}
+
+.btnSave:hover{
+    background: #0ec1e0;
+}
+
+.btnExcluir:hover{
+    background: #0ec1e0;
+}
 
 
 

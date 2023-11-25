@@ -1,4 +1,4 @@
-.menu{
+.menu {
     background-color: #fff;
     color: #000;
     display: flex;
@@ -36,27 +36,29 @@
 }
 
 .user-icon {
-    
+
     display: flex;
     align-items: center;
     font-size: 16px;
     margin-right: 40px;
     position: relative;
 }
-.ola{
+
+.ola {
     font-size: 22px;
     color: #288397;
     font-weight: bold;
-    
+
 }
 
-.cadastro{
+.cadastro {
     text-decoration: none;
     color: #288397;
     font-weight: bold;
 
 }
-.icon{
+
+.icon {
     height: 60px;
     margin-right: 15px;
 }
@@ -68,11 +70,21 @@
     justify-content: space-around;
     padding: 10px 0;
     font-size: 20px;
-    
+
 }
 
 .sub-header a {
     text-decoration: none;
     color: #fff;
     margin: 0 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .user-icon {
+        font-size: 12px;
+    }
+    
+    .sub-header a {
+        font-size: 15px;
+    }
 }

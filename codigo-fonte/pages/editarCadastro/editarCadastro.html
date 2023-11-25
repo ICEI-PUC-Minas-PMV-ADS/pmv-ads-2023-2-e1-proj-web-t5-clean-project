@@ -21,22 +21,14 @@
             <a href="../editarCadastro/editarCadastro.html"><img src="../../img/header/usuario.png" alt="Icone Usuário" class="icon"></a>
             <span>
                 <span class="ola">Olá!</span><br>
-<<<<<<< HEAD
                 Faça seu <a href="../../pages/cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
-=======
-                Faça seu <a href="../cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
->>>>>>> e99173ed8a92b1fdb8041ba8844707bf7b196e22
                 notificações sobre a coleta seletiva da sua rua
             </span>
             </div> 
         </div>
         <nav class="sub-header">
         <a href="../../pages/home/index.html"> <li>Início</li></a>
-<<<<<<< HEAD
         <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre Nós</li></a>
-=======
-        <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre</li></a>
->>>>>>> e99173ed8a92b1fdb8041ba8844707bf7b196e22
         <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
         <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
         <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
@@ -75,24 +67,24 @@
             <div class="second__collum">
             
 
-                <div class="social__media">
-                    <ul class="list social__media">
-                <div class="separacao_box">
-                    <intup class="checkbox">Receber notificações</intup>
-                
-                
-                    <intup class="checkbox">Não receber notificações</intup>
-                </div>       
-                    </ul>
-                </div>
+                <ul class="list social__media">
+                    <label>
+                        <input type="checkbox" id="checkbox1" class="checkbox">
+                        Receber notificações
+                    </label>
+                    <label>
+                        <input type="checkbox" id="checkbox2" class="checkbox">
+                        Não receber notificações
+                    </label>
+                </ul>
 
                 <div class="grupo_botoes">
                 <!-- <form class="form"> -->
                     <div>
-                        <button class="btn">Salvar</button>
+                        <button id="btnSave" class="btnSave">Salvar</button>
                     </div>
                     <div>
-                        <button class="btn">Excluir perfil</button>
+                        <button id="btnExcluir" class="btnExcluir">Excluir perfil</button>
                     </div>
                 <!-- </form> -->
                 </div>
@@ -101,7 +93,6 @@
 
         
     </main>
-<<<<<<< HEAD
     <footer>
         <div class="Information">
             <h3>Atalhos</h3>
@@ -110,7 +101,7 @@
             <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
             <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
             <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
-            <a href="../../pages/cadastro/cadastro.html"><li>Cadastro</li></a>
+        
         </div>
         
         
@@ -119,15 +110,6 @@
             <p><span>Email:</span> info@cleanplanet.com</p>
             <p><span>Telefone:</span> (123) 456-7890</p>
         </div>
-=======
-    <footer><div class="Information">
-        <h3>Atalhos</h3>
-        <a href="../sobreNos/sobreNos.html">Sobre Nós</a>
-        <a href="../pontosDeColeta/pontosDeColeta.html">Ponto de Coleta</a>
-        <a href="../coletaSeletiva/coletaSeletiva.html">Coleta Seletiva</a>
-        <a href="../mapa/mapa.html">Mapa</a>
-    </div>
->>>>>>> e99173ed8a92b1fdb8041ba8844707bf7b196e22
     
     
     <div class="contact">
@@ -142,7 +124,99 @@
         <a href="#"><img src="../../img/footer/instagram.png" alt="icon instagram branco vazado">Nos siga no Instagram</a></a></a>
         <a href="#"><img src="../../img/footer/twitter (2).png" alt="icon twitter branco vazado">Fique por dentro das novidades no nosso Twitter</a></a></a>
     </div>
+    
 </footer> 
+
+<script src="../../js/editarCadastro.js"></script>
+
+<script>
+    function handleCheckboxClick(clickedCheckboxId, otherCheckboxId) {
+        var clickedCheckbox = document.getElementById(clickedCheckboxId);
+        var otherCheckbox = document.getElementById(otherCheckboxId);
+
+        if (clickedCheckbox.checked) {
+            otherCheckbox.checked = false;
+        }
+    }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var checkbox1 = document.getElementById('checkbox1');
+        var checkbox2 = document.getElementById('checkbox2');
+        var btnSave = document.getElementById('btnSave');
+        var btnExcluir = document.getElementById('btnExcluir');
+
+        checkbox1.addEventListener('change', function() {
+            if (checkbox1.checked) {
+                checkbox2.checked = false;
+            }
+        });
+
+        checkbox2.addEventListener('change', function() {
+            if (checkbox2.checked) {
+                checkbox1.checked = false;
+            }
+        });
+
+        btnSave.addEventListener('click', function() {
+            salvarPerfil();
+        });
+
+        btnExcluir.addEventListener('click', function() {
+            var confirmacao = confirm("Tem certeza de que deseja excluir o perfil?");
+
+            if (confirmacao) {
+                excluirPerfil();
+            }
+        });
+
+        function salvarPerfil() {
+            var nome = document.querySelector('input[placeholder="Nome Completo:"]').value;
+            var exibicao = document.querySelector('input[placeholder="Nome de Exibição:"]').value;
+            var email = document.querySelector('input[placeholder="Email Cadastrado:"]').value;
+            var endereco = document.querySelector('input[placeholder="Endereço Cadastrado:"]').value;
+
+            // Aqui você pode fazer algo com esses valores, por exemplo, enviá-los para o backend ou salvá-los no localStorage
+            // Exemplo: Salvando no localStorage
+            localStorage.setItem('nome', nome);
+            localStorage.setItem('exibicao', exibicao);
+            localStorage.setItem('email', email);
+            localStorage.setItem('endereco', endereco);
+
+            alert("Perfil salvo com sucesso!");
+        }
+
+        function excluirPerfil() {
+            // Limpar o localStorage
+            localStorage.clear();
+
+            // Exibir alerta de perfil excluído
+            alert("Perfil excluído com sucesso!");
+
+            // Redirecionar para a página de login (substitua "cadastro.html" pelo caminho correto)
+            window.location.href = "/codigo-fonte/pages/cadastro/cadastro.html";
+        }
+
+        // Recuperar dados do localStorage ao carregar a página
+        function carregarDados() {
+            var nome = localStorage.getItem('nome');
+            var exibicao = localStorage.getItem('exibicao');
+            var email = localStorage.getItem('email');
+            var endereco = localStorage.getItem('endereco');
+
+            // Preencher os campos com os dados recuperados
+            document.querySelector('input[placeholder="Nome Completo:"]').value = nome;
+            document.querySelector('input[placeholder="Nome de Exibição:"]').value = exibicao;
+            document.querySelector('input[placeholder="Email Cadastrado:"]').value = email;
+            document.querySelector('input[placeholder="Endereço Cadastrado:"]').value = endereco;
+        }
+
+        // Carregar dados ao carregar a página
+        carregarDados();
+    });
+</script>
+
 </body>
 
 
