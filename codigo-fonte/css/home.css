@@ -13,6 +13,8 @@
 body{
     background-color: var(--cor-fundo);
     font-weight: 500;
+
+    
 }
 
 
@@ -30,6 +32,8 @@ body{
     color: var(--cor-principal);
     font-size: 30px;
 }
+
+
 
 .categorias__lista{
     display: flex;

@@ -1,88 +1,113 @@
+window.addEventListener('load', trocarCadastrarPorSair);
 //  Transição
 const btnSignin = document.querySelector("#signin");
 const btnSignup = document.querySelector("#signup");
 
 const body = document.querySelector("body");
 
-
 btnSignin.addEventListener("click", function () {
-   body.className = "sign-in-js"; 
+  body.className = "sign-in-js";
 });
 
 btnSignup.addEventListener("click", function () {
-    body.className = "sign-up-js";
-})
+  body.className = "sign-up-js";
+});
 
-//Validação 
+//Validação
 const emailInput = document.querySelector('input[type="email"]');
-    const passwordInput = document.querySelector('input[type="password"]');
-    const form = document.querySelector('form');
+const passwordInput = document.querySelector('input[type="password"]');
+const form = document.querySelector("form");
 
-    form.addEventListener('submit', function (e) {
-        if (emailInput.value === '' || passwordInput.value === '') {
-            e.preventDefault(); 
-            alert('Por favor, preencha todos os campos.');
-        }
-    }
-)
+form.addEventListener("submit", function (e) {
+  if (emailInput.value === "" || passwordInput.value === "") {
+    e.preventDefault();
+    alert("Por favor, preencha todos os campos.");
+  }
+});
 
-function logar(){
-    const login = document.getElementById('Login').value;
-    const senha = document.getElementById('Senha').value;
+function logar() {
+  const login = document.getElementById("Login").value;
+  const senha = document.getElementById("Senha").value;
 
-    fetch('../../json/usuários.json')
-    .then(response =>{
-        if(!response.ok){
-            throw new Error ('Erro ao carregar usuário');
-        }
-        return response.json();
+  fetch("../../json/usuários.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Erro ao carregar usuário");
+      }
+      return response.json();
     })
 
-    .then(usuarios => {
-        const usuarioEncontrado = usuarios.find(usuario => usuario.email === login && usuario.senha === senha);
+    .then((usuarios) => {
+      const usuarioEncontrado = usuarios.find(
+        (usuario) => usuario.email === login && usuario.senha === senha
+      );
 
-        if (usuarioEncontrado){
-            alert('Sucesso!');
-            location.href = '../home/index.html'
-        } else {
-            alert('Usuário ou senha incorretos!')
-        }
+      if (usuarioEncontrado) {
+        alert("Sucesso!");
+        location.href = "../home/index.html";
+      } else {
+        alert("Usuário ou senha incorretos!");
+      }
     })
 
-    .catch(error => console.error('Erro:', error));
+    .catch((error) => console.error("Erro:", error));
 }
 
 // Função para cadastrar um novo usuário
 function cadastrarUsuario(nome, email, senha) {
-    const novoUsuario = {
-        nome: nome,
-        email: email,
-        senha: senha,
-    };
+  const novoUsuario = {
+    nome: nome,
+    email: email,
+    senha: senha,
+  };
 
-    let usuarios = localStorage.getItem('usuarios');
-    usuarios = usuarios ? JSON.parse(usuarios) : [];
+  let usuarios = localStorage.getItem("usuarios");
+  usuarios = usuarios ? JSON.parse(usuarios) : [];
 
-    usuarios.push(novoUsuario);
+  usuarios.push(novoUsuario);
 
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
-    window.location.href = '../home/index.html';
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
+  //window.location.href = '../home/index.html';
+
+  trocarCadastrarPorSair();
+}
+
+//função para sair tela inical
+function trocarCadastrarPorSair() {
+  let usuarioLogado = localStorage.getItem("usuarios");
+
+  const containerCadastro = document.getElementById("login");
+
+  if (usuarioLogado != null) {
+
+    var usuariosArmazenados = JSON.parse(usuarioLogado);
+
+    containerCadastro.innerHTML =
+    `<span><span class="ola">Olá! Bem-vindo(a) ${usuariosArmazenados[0].nome} <br></span><br><a href="../home/index.html" class="cadastro" onclick="deslogarUsuario()">Sair</a></span>`
+    
+  } else {
+    containerCadastro.innerHTML =
+      '<span><span class="ola">Olá!</span><br>Faça seu <a href="../cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>notificações sobre a coleta seletiva da sua rua</span>';
+  }
 }
 
 
-const formCadastro = document.querySelector('.form');
+//função limpar registro de usuario
+function deslogarUsuario(){
+   
+    localStorage.clear();
+}
 
+const formCadastro = document.querySelector(".form");
 
-formCadastro.addEventListener('submit', function (event) {
-    event.preventDefault(); 
+formCadastro.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('password').value;
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("password").value;
 
-    
-    cadastrarUsuario(nome, email, senha);
+  cadastrarUsuario(nome, email, senha);
 
-    alert('Usuário cadastrado com sucesso!');
+  alert("Usuário cadastrado com sucesso!");
 });
