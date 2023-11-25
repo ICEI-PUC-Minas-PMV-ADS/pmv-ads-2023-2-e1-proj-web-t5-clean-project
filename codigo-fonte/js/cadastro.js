@@ -57,9 +57,7 @@ function togglePasswordVisibility(inputId) {
 nome.addEventListener('blur', () => {
     const nomeValue = nome.value.trim();
     
-        if (nomeValue.length < 3) {
-            labelNome.textContent = 'O nome deve ter no mínimo 3 caracteres';
-            nome.focus();
+        if(nome.value.lengh <= 2){
+            labelNome.innerHTML = '<strong>Nome '
         }
-    });
-    
+})
