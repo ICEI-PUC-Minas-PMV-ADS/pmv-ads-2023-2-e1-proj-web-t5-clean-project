@@ -55,3 +55,73 @@ document.querySelector('.carrossel').addEventListener('mouseout', function() {
 });
 
 showSlide(index);
+
+const pontosColeta = {
+  "Papel": ["Local 1 para Papel", "Local 2 para Papel"],
+  "Metal": ["Local 1 para Metal", "Local 2 para Metal"],
+  "Plástico": ["Local 1 para Plástico", "Local 2 para Plástico"],
+  "Isopor": ["Local 1 para Isopor", "Local 2 para Isopor"],
+  "Vidro": ["Local 1 para Vidro", "Local 2 para Vidro"],
+  "Hospitalar": ["Local 1 para Hospitalar", "Local 2 para Hospitalar"],
+  "Eletrônico": ["Local 1 para Eletrônico", "Local 2 para Eletrônico"]
+  // Insira os pontos de coleta para cada tipo de resíduo
+};
+
+/* function buscar() {
+  const residuoSelecionado = document.getElementById('residuo').value;
+  const cidadeDigitada = document.getElementById('cidade').value;
+
+  const resultado = encontrarPontosColeta(residuoSelecionado, cidadeDigitada);
+
+  exibirResultado(resultado);
+}
+
+function encontrarPontosColeta(residuo, cidade) {
+  if (pontosColeta[residuo]) {
+      return `Pontos de coleta para ${residuo} em ${cidade}: ${pontosColeta[residuo].join(', ')}`;
+  } else {
+      return `Desculpe, não há pontos de coleta para ${residuo}.`;
+  }
+}
+
+function exibirResultado(resultado) {
+  document.getElementById('resultado').innerText = resultado;
+} */
+
+
+function buscar() {
+  const residuoSelecionado = document.getElementById('residuo').value;
+  const cidadeDigitada = document.getElementById('cidade').value;
+  
+  // Código para buscar os pontos de coleta com base no resíduo e na cidade
+  // Suponhamos que os pontos de coleta são armazenados em um objeto pontosColeta
+
+  const pontosColeta = {
+      "Papel - Belo Horizonte": [
+          "Local 1 para Papel em Belo Horizonte",
+          "Local 2 para Papel em Belo Horizonte"
+      ],
+      "Metal - Belo Horizonte": [
+          "Local 1 para Metal em Belo Horizonte",
+          "Local 2 para Metal em Belo Horizonte"
+      ],
+      // ... Outros tipos de resíduos e cidades
+  };
+  
+  const resultadoElement = document.getElementById('pontos-coleta');
+  resultadoElement.innerHTML = ''; // Limpa o conteúdo anterior
+
+  const chaveBusca = `${residuoSelecionado} - ${cidadeDigitada}`;
+  const locaisColeta = pontosColeta[chaveBusca];
+
+  if (locaisColeta) {
+      locaisColeta.forEach(local => {
+          const listItem = document.createElement('li');
+          listItem.textContent = local;
+          resultadoElement.appendChild(listItem);
+      });
+  } else {
+      resultadoElement.innerHTML = 'Ainda não temos acesso aos pontos de coleta dessa cidade.';
+  }
+}
+

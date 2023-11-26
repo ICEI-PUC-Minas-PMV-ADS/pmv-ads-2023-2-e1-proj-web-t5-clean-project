@@ -25,58 +25,67 @@
             </div> 
         </div>
         <nav class="sub-header">
-        <a href="../../pages/home/index.html"> <li>Início</li></a>
-        <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre</li></a>
-        <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
-        <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
-        <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
+        <a href="../../pages/home/index.html"> Início</a>
+        <a href="../../pages/sobreNos/sobreNos.html">Sobre</a>
+        <a href="../../pages/coletaSeletiva/coletaSeletiva.html">Coleta Seletiva</a>
+        <a href="../../pages/pontosDeColeta/pontosDeColeta.html">Pontos de Coleta</a>
+        <a href="../../pages/mapa/mapa.html">Mapa</a>
         
         </nav>
     </header>
 
     <main>
-        <h2>Pontos de coleta</h2>
-
-        <div class="carrossel">
-            <div class="carrossel-container">
-              <div class="slide">
-                <img src="../../img/pontos de coleta/3.png" alt="Imagem 1">
-              </div>
-              <div class="slide">
-                <img src="../../img/pontos de coleta/4.png" alt="Imagem 2">
-              </div>
-              <div class="slide">
-                <img src="../../img/pontos de coleta/5.png" alt="Imagem 3">
-              </div>
-              <div class="slide">
-                <img src="../../img/pontos de coleta/6.png" alt="Imagem 4">
-              </div>
-              <div class="slide">
-                <img src="../../img/pontos de coleta/7.png" alt="Imagem 5">
-              </div>
-              <div class="slide">
-                <img src="../../img/pontos de coleta/8.png" alt="Imagem 6">
-              </div>
-            </div>
-            
-            <div class="nav-arrows">
-                <div id="prevBtn" class="arrow left-arrow">&#8249;</div>
-                <div id="nextBtn" class="arrow right-arrow">&#8250;</div>
-            </div>
-
+      <h2>Pontos de Coleta</h2>
+      <div class="carrossel">
+        <div class="carrossel-container">
+          <div class="slide">
+            <img src="../../img/pontos de coleta/3.png" alt="Imagem 1">
           </div>
-          
+          <div class="slide">
+            <img src="../../img/pontos de coleta/4.png" alt="Imagem 2">
+          </div>
+          <div class="slide">
+            <img src="../../img/pontos de coleta/5.png" alt="Imagem 3">
+          </div>
+          <div class="slide">
+            <img src="../../img/pontos de coleta/6.png" alt="Imagem 4">
+          </div>
+          <div class="slide">
+            <img src="../../img/pontos de coleta/7.png" alt="Imagem 5">
+          </div>
+          <div class="slide">
+            <img src="../../img/pontos de coleta/8.png" alt="Imagem 6">
+          </div>
+        </div>
         
-        <!-- <select id="tipoLixoSelect">
-            <option value="papel">Papel</option>
-            <option value="metal">Metal</option>
-            <option value="plastico">Plástico</option>
-            <option value="isopor">Isopor</option>
-            <option value="vidro">Vidro</option>
-            <option value="hospitalar">Hospitalar</option>
-            <option value="eletronico">Eletrônico</option>
-        </select> -->
-        
+        <div class="nav-arrows">
+            <div id="prevBtn" class="arrow left-arrow">&#8249;</div>
+            <div id="nextBtn" class="arrow right-arrow">&#8250;</div>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="busca">
+            <select id="residuo">
+                <option disabled selected>Selecione o tipo de resíduo</option>
+                <option value="Papel">Papel</option>
+                <option value="Metal">Metal</option>
+                <option value="Plástico">Plástico</option>
+                <option value="Isopor">Isopor</option>
+                <option value="Vidro">Vidro</option>
+                <option value="Hospitalar">Hospitalar</option>
+                <option value="Eletrônico">Eletrônico</option>
+            </select>
+            <input type="text" id="cidade" placeholder="Digite o nome da cidade">
+            <button onclick="buscar()">Buscar</button>
+        </div>
+        <div class="resultado" id="resultado"> <br>
+            <ol id="pontos-coleta"></ol>
+        </div>
+    </div>
+      
+  
     </main>
 
     <footer>
