@@ -68,6 +68,35 @@ Letícia Pires Lopes de Souza
 
 <hr>
 
+### Tela Editar Cadastro
+O acesso a parte de editar cadastro pode ser feito através das página: Início,Sobre,Coleta seletiva,Pontos de coleta e Mapa.
+![Imagem do WhatsApp de 2023-11-25 à(s) 17 16 44_2bd8c145](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/90eca16a-e117-4f22-b132-f301f9c97d92)
+
+#### Requisito atendido
+RF-09: A aplicação deve ter uma página de perfil do usuário (com os dados) e configurações
+
+#### Artefatos da funcionalidade
+HTML
+CSS
+JavaScript
+
+#### Estrutura de Dados
+
+editarCadastro.html
+editarCadastro.css
+editarCadastro.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+Felipe Augusto Guimaraes Dante
+
+<hr>
+
 ### Tela 
 
 
@@ -99,3 +128,31 @@ Letícia Pires Lopes de Souza
 
 
 <hr>
+
+### Tela 
+
+
+
+
+
+#### Requisito atendido
+
+
+
+
+#### Artefatos da funcionalidade
+
+
+
+
+#### Estrutura de Dados
+
+
+
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
