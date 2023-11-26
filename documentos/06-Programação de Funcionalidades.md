@@ -1,4 +1,4 @@
-![Mapa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/c66e066c-71a2-4bfb-82c5-c5f01033e7e4)# Programação de Funcionalidades
+# Programação de Funcionalidades
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
