@@ -177,3 +177,49 @@ Verificar se as instruções fornecidas são suficientes para orientar o usuári
   <td>Maria Julia</td>
  </tr>
 </table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-05: Verificar se os usuários conseguem sair de seu perfil e conseguem apertar o botão para receber notificação</td>
+  <td>
+  <ul>
+    <li>RF-12: A aplicação deve oferecer uma funcionalidade para que o usuário saia do seu perfil.</li>
+<li>RF-13: A aplicação deve oferecer uma funcionalidade em que o usuário pode clicar no botão e ser notificado quanto ao dia de coleta.</li>
+ </li>
+    </ul>
+  </td>
+  <td>Verificar a funcionalidade da página de login/cadastro para sair 
+ <li>SAIR:
+Alternância de Abas
+●	Verificar se é possível deslogar do perfil nas outras Abas
+●	Testar o redirecionamento para a página correta após sair (home)
+</li>
+ <li>ALERTA NOTIFICAÇÃO
+ ●	Garantir que quando clicar no botão a mensagem de alerta vai aparecer</li>
+<li>TESTE DE USABILIDADE:
+●	Avaliar a facilidade de uso da interface de saída do site
+●	Se ao clicar no ícone de notificação a mensagem de alerta vai aparecer</li>
+</td>
+  <td>
+   <ol>
+   <li>Acessar a página de Login/Cadastro</li>
+    <li>Preencher os campos (Nome, email, senha e confirmação de senha) com credenciais válidas e não válidas</li>
+    <li>Enviar o formulário sem preencher todos os campos</li>
+    <li>Confirmar cadastro/login</li>
+    <li>Após a confirmação dos dados vai mudar o campo “Olá” para “Olá Bem-vindo(a) nome”
+e logo embaixo vai ter o botão sair</li>
+    <li>Na imagem ao lado vai ter o botão de mensagem para aparecer o alerta</li>
+    </ol>
+  </td>
+  <td>Mensagem de confirmação de login/cadastro ou de erro caso falte algum campo para preencher ou de usuário não existente. Após a confirmação redirecionar para página Home</td>
+  <td>Luiza</td>
+ </tr>
+</table>
