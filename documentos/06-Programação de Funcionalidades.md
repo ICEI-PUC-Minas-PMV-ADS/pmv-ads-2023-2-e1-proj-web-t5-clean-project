@@ -1,4 +1,4 @@
-# Programação de Funcionalidades
+![Mapa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/c66e066c-71a2-4bfb-82c5-c5f01033e7e4)# Programação de Funcionalidades
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
@@ -97,57 +97,61 @@ Felipe Augusto Guimaraes Dante
 
 <hr>
 
-### Tela 
+### Tela Coleta Seletiva
 
+O acesso a pagina de coleta seletiva, que possui um carrossel de imagens com instruções para a coleta de lixo, pode ser feito através das página: Início, Sobre, Pontos de coleta e Mapa.
 
-
-
+![Coleta Seletiva](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/ed4a6aba-2d25-4cfe-9a05-7ffdf081d315)
 
 #### Requisito atendido
-
+- RF-01:	A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por cores/categoria)
+- RF-04:	A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar
+- RF-06:	A aplicação deve informar como fazer o descarte correto de vidro
 
 
 
 #### Artefatos da funcionalidade
-
-
-
+- HTML
+- CSS
+- JavaScript
 
 #### Estrutura de Dados
-
-
-
+- coletaSeletiva.html
+- coletaSeletiva.css
+- coletaSeletiva.js
 
 #### Instruções de acesso
 
-
-
+- O usuário poderá dar um click em cada um dos botões que estão no carrossel para navegar entre as imagens de instruções.
 
 #### Responsável
 
+- Israel Rodrigues Diniz
 
 
 <hr>
 
-### Tela 
-
-
+### Tela Mapa 
+O acesso a pagina do mapa, que possui o mapa da cidade de Belo Horizonte, pode ser feito através das página: Início, Sobre, Pontos de coleta e Coleta Seletiva.
+![Uploading Mapa.png…]()
 
 
 
 #### Requisito atendido
-
+- RF-10:	A aplicação deve ter uma página com um mapa para que o usuário pesquise o seu endereço e veja a localização do agente de coleta (Não está funcional, o mapa é apenas visual!!!)
 
 
 
 #### Artefatos da funcionalidade
-
-
+- HTML
+- CSS
+- JavaScript
 
 
 #### Estrutura de Dados
-
-
+- mapa.html
+- mapa.css
+- mapa.js
 
 
 #### Instruções de acesso
@@ -156,3 +160,6 @@ Felipe Augusto Guimaraes Dante
 
 
 #### Responsável
+
+- Israel Rodrigues Diniz
+
