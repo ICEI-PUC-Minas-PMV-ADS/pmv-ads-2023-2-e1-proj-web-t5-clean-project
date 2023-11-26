@@ -5,23 +5,6 @@ const body = document.querySelector("body");
 
 const eyeIcons = document.querySelectorAll('.eyeIcon');
 
-/* const nome = document.querySelector('#nome');
-const labelNome = document.querySelector('#labelNome');
-const validNome = false
-
-const email = document.querySelector('#email');
-const labelEmail = document.querySelector('#labelEmail');
-const validEmail = false
-
-const senha1 = document.querySelector('#senha1');
-const labelSenha = document.querySelector('#labelSenha1');
-const validSenha1 = false
-
-
-const confirmSenha = document.querySelector('#confirmSenha');
-const labelConfirmSenha = document.querySelector('#labelConfirmSenha');
-const validConfirmSenha = false */
-
 //  Transição
 btnSignin.addEventListener("click", function () {
    body.className = "sign-in-js"; 
@@ -60,27 +43,21 @@ function togglePasswordVisibility(inputId) {
 //LOGIN Usuário
 
 function logar() {
-    const email = document.getElementById('email2').value.trim(); 
-    const senha = document.getElementById('senha2').value.trim(); 
+    const email = document.getElementById('email2').value.trim();
+    const senha = document.getElementById('senha2').value.trim();
 
-    fetch('../../json/usuarios.json') 
-        .then(response => response.json()) 
-        .then(users => {
-            console.log(users); 
-            const user = users.find(u => u.email.trim() === email && u.senha.trim() === senha);
+    const users = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-            if (user) {
-                alert(`Bem-vindo, ${user.nome}! Login bem-sucedido.`);
-                setTimeout(function() {
-                    window.location.href = '../../pages/home/index.html'; 
-                }, 2000); 
-            } else {
-                alert('Credenciais inválidas. Tente novamente.');
-            }
-        })
-        .catch(error => {
-            console.error('Erro ao carregar os usuários:', error);
-        });
+    const user = users.find(u => u.email === email && u.senha === senha);
+
+    if (user) {
+        alert(`Bem-vindo, ${user.nome || user.email}! Login bem-sucedido.`);
+        setTimeout(function () {
+            window.location.href = '../../pages/home/index.html';
+        }, 1000);
+    } else {
+        alert('Credenciais inválidas. Tente novamente.');
+    }
 }
 
 function cadastrar() {
@@ -99,27 +76,29 @@ function cadastrar() {
         return;
     }
 
+    const users = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+    // Verifica se o email já está cadastrado
+    const existingUser = users.find(u => u.email === email);
+    if (existingUser) {
+        alert('Este email já está cadastrado. Por favor, utilize outro email.');
+        return;
+    }
 
     // Criar um novo usuário
     const novoUsuario = {
-        "email": email,
-        "senha": senha
+        email,
+        senha
     };
 
-    fetch('../../json/usuarios.json')
-        .then(response => response.json())
-        .then(users => {
-            // Adicionar o novo usuário à lista existente
-            users.push(novoUsuario);
+    // Adicionar o novo usuário à lista existente
+    users.push(novoUsuario);
 
-            console.log(users);
+    // Atualizar o localStorage com a lista atualizada de usuários
+    localStorage.setItem('usuarios', JSON.stringify(users));
 
-            alert('Cadastro realizado com sucesso!');
+    alert('Cadastro realizado com sucesso!');
 
-            // Redirecionar para a página de login ou para outra página após o cadastro
-            window.location.href = '../../pages/home/index.html'; 
-        })
-        .catch(error => {
-            console.error('Erro ao carregar os usuários:', error);
-        });
+    // Redirecionar para a página de login ou para outra página após o cadastro
+    window.location.href = '../../pages/home/index.html';
 }
