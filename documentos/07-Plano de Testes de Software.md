@@ -223,3 +223,44 @@ e logo embaixo vai ter o botão sair</li>
   <td>Luiza</td>
  </tr>
 </table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo</td>
+  <td>
+  <ul>
+    <li> </li>
+    </ul>
+  </td>
+  <td>Verificar se o carrossel funciona sozinho (em um processo automático de ir trocando as imagens) e manualmente.
+ <li>Carrossel:
+Funcionamento automático e manual:
+Testar se o carrossel avança automaticamente pelos slides.
+Verificar se é possível navegar manualmente entre os slides.
+Confirmar se todas as 5 imagens estão aparecendo no carrossel.
+</li>
+ </li>
+</td>
+  <td>
+   <ol>
+   <li>Acessar a página coleta seletiva</li>
+    <li>Verificar o funcionamento do carrossel automático (a troca das imagens automaticamente).</li>
+    <li>Verificar o funcionamento do carrossel de forma manual.</li>
+    </ol>
+   </td>
+  <td>
+   <ol>
+    <li>O carrossel avança automaticamente e permite navegação manual.</li>
+    <li>Todas as 5 imagens são apresentadas no carrossel.</li>
+   </td>
+  <td>Israel Diniz</td>
+ </tr>
+</table>
