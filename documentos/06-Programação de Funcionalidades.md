@@ -230,5 +230,71 @@ RF-13: A aplicação deve oferecer uma funcionalidade em que o usuário pode cli
 
   <hr>
 
+  
+### Tela de Cadastro
+
+O usuário deve conseguir criar uma conta 
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/fcebda10-e2f1-4e35-9292-847841c0309d)
+
+
+#### Requisito atendido
+
+RF-O2 : A aplicação deve oferecer uma funcionalidade para que o usuário se cadastre
+
+#### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
+
+
+#### Estrutura de Dados
+- cadastro.css
+- cadastro.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+- Maria Júlia Souza Santos
+
+  <hr>
+
+  ### Tela de Cadastro
+
+O usuário deve conseguir acessar seu login
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/29e17657-7802-4224-b4ef-77bf68ad4693)
+
+
+#### Requisito atendido
+
+RF-11: A aplicação deve oferecer uma funcionalidade para que o usuário faça login
+
+#### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
+
+
+#### Estrutura de Dados
+- cadastro.css
+- cadastro.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+- Maria Júlia Souza Santos
+
+  <hr>
+
+
 
 
