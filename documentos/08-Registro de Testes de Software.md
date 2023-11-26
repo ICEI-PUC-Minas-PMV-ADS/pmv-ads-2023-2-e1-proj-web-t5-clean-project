@@ -67,4 +67,20 @@ Sair do perfil:
 
   <hr>
 
+<li> CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo
+
+  Responsável: Maria Júlia Souza Santos
+
+  Verificar o funcionamento do carrossel automático (a troca das imagens automaticamente).
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/66154f0c-a171-402e-9b0e-117216c75682
+
+
+  
+  
+
+  
+
+  
 
