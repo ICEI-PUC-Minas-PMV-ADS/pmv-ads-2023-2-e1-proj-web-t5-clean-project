@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/pontoDeColeta.css">
-    <title>Document</title>
+    <title>Pontos de coleta</title>
 </head>
 <body>
     <header>
@@ -36,7 +36,7 @@
     </header>
 
     <main>
-      <h2>Pontos de Coleta</h2>
+      <h1 id="título">Pontos de Coleta</h1>
       <div class="carrossel">
         <div class="carrossel-container">
           <div class="slide">
@@ -68,22 +68,31 @@
 
       <div class="container">
         <div class="busca">
-            <select id="residuo">
-                <option disabled selected>Selecione o tipo de resíduo</option>
-                <option value="Papel">Papel</option>
-                <option value="Metal">Metal</option>
-                <option value="Plástico">Plástico</option>
-                <option value="Isopor">Isopor</option>
-                <option value="Vidro">Vidro</option>
-                <option value="Hospitalar">Hospitalar</option>
-                <option value="Eletrônico">Eletrônico</option>
-            </select>
-            <input type="text" id="cidade" placeholder="Digite o nome da cidade">
-            <button onclick="buscar()">Buscar</button>
-        </div>
-        <div class="resultado" id="resultado"> <br>
-            <ol id="pontos-coleta"></ol>
-        </div>
+          <select id="residuo">
+              <option disabled selected>Selecione o tipo de resíduo</option>
+              <option value="Papel">Papel</option>
+              <option value="Metal">Metal</option>
+              <option value="Plástico">Plástico</option>
+              <option value="Isopor">Isopor</option>
+              <option value="Hospitalar">Hospitalar</option>
+              <option value="Eletrônico">Eletrônico</option>
+              <option value="Vidro">Vidro</option>
+            
+          </select>
+          <input type="text" id="cidade" placeholder="Digite o nome da cidade">
+          <button id="btn" onclick="buscar()">Buscar</button><br><br>
+      </div>
+      
+      <div class="resultado">
+          <div class="regioes">
+              <ul id="lista-regioes">
+                 
+              </ul>
+          </div>
+          <div class="pontos-coleta" id="pontos-coleta">
+              
+          </div>
+      </div>
     </div>
       
   
@@ -103,6 +112,6 @@
             <a href="#"><img src="../../img/footer/twitter (2).png" alt="icon twitter branco vazado">Fique por dentro das novidades no nosso Twitter</a></a></a>
         </div>
     </footer> 
-    <script src="../../js/cadastro.js"></script>
+    <script src="../../js/pontosDeColeta.js"></script>
 </body>
 </html>
