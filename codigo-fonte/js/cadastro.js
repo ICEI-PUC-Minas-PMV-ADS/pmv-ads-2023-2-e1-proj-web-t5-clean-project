@@ -220,28 +220,6 @@ function cadastrar() {
   // Redirecionar para a página de login ou para outra página após o cadastro
 }
 
-// Função para alternar a visibilidade da senha
-
-// Seleciona todos os ícones de olhon f
-
-// Itera sobre cada ícone de olho
-
-    document.querySelectorAll('.fa-eye').forEach(icon => {
-        icon.addEventListener('click', function() {
-            const inputFieldId = this.getAttribute('data-target');
-            const inputField = document.getElementById(inputFieldId);
-
-            if (inputField.type === 'password') {
-                inputField.type = 'text';
-                this.classList.remove('fa-eye');
-                this.classList.add('fa-eye-slash');
-            } else {
-                inputField.type = 'password';
-                this.classList.remove('fa-eye-slash');
-                this.classList.add('fa-eye');
-            }
-        });
-    });
 
 
 
