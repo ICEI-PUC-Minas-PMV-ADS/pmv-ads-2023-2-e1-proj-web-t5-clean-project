@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../css/global/">
     <link rel="stylesheet" href="../../css/home.css">
 
-    <script src="/codigo-fonte/js/home.js" defer></script>
+    
 </head>
 
 <body>
@@ -21,22 +21,14 @@
          </div>
             <div class="search">
             <input type="text" placeholder="Buscar">
-            <div>
-                <button onclick="Notificacao()">Enviar Notificação</button>
-                <script>
-                 function Notificacao() {
-                 window.alert(" Seu dia da coleta é: Segunda, Quanta e Sexta.");
-                   }
-                </script>
-            </div>
+            
             </div>
             <div class="user-icon">
-            <img src="../../img/header/usuario.png" alt="Icone Usuário" class="icon">
-            
-            <span>
+            <a href="../editarCadastro/editarCadastro.html"><img src="../../img/header/usuario.png" alt="Icone Usuário" class="icon"></a>
+            <span id="login">
                 
                 <span class="ola">Olá!</span><br>
-                Faça seu <a href="../../pages/cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
+                Faça seu <a href="../cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
                 notificações sobre a coleta seletiva da sua rua
             </span>
             </div> 
@@ -114,18 +106,18 @@
                     </details>
                 </div>
 
-                <form id="form" class="form" action="https://formsubmit.co/ajax/leticia.souza@sga.pucminas.br" method="POST">
+                <form id="form" class="form" action="https://formsubmit.co/ajax/leticia.souza@sga.pucminas.br" method="POST" data-form>
                     <div class="form-controle">
                         <input type="text" id="pergunta" placeholder="Digite sua dúvida aqui">
                     
 
                     </div>
                     
-                    <button type="submit">Enviar</button>
+                    <button type="submit" data-button>Enviar</button>
                 </form>
 
 
-                </div
+               
         </div>
 
     </section>
@@ -134,11 +126,10 @@
     <footer>
         <div class="Information">
             <h3>Atalhos</h3>
-            <a href="../../pages/home/index.html"> <li>Início</li></a>
-            <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre Nós</li></a>
-            <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
-            <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
-            <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
+            <a href="../sobreNos/sobreNos.html">Sobre Nós</a>
+            <a href="../pontosDeColeta/pontosDeColeta.html">Ponto de Coleta</a>
+            <a href="../coletaSeletiva/coletaSeletiva.html">Coleta Seletiva</a>
+            <a href="../mapa/mapa.html">Mapa</a>
         </div>
         
         
@@ -155,6 +146,10 @@
             <a href="#"><img src="../../img/footer/twitter (2).png" alt="icon twitter branco vazado">Fique por dentro das novidades no nosso Twitter</a></a></a>
         </div>
     </footer> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/codigo-fonte/js/home.js" defer></script>
+    <script src="/codigo-fonte/js/cadastro.js" defer></script>
+    <script src="/codigo-fonte/js/notificacao.js" defer></script>
 
 </body>
 

@@ -19,16 +19,17 @@
             </div>
             <div class="user-icon">
             <a href="../editarCadastro/editarCadastro.html"><img src="../../img/header/usuario.png" alt="Icone Usuário" class="icon"></a>
-            <span>
+            <span id="login">
+                
                 <span class="ola">Olá!</span><br>
-                Faça seu <a href="../../pages/cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
+                Faça seu <a href="../cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>
                 notificações sobre a coleta seletiva da sua rua
             </span>
             </div> 
         </div>
         <nav class="sub-header">
         <a href="../../pages/home/index.html"> <li>Início</li></a>
-        <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre Nós</li></a>
+        <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre</li></a>
         <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
         <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
         <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
@@ -47,19 +48,15 @@
                 <div>
                     <div class="campos">
                         <input type="text"  
-                        placeholder="Nome Completo:">
+                        placeholder="Nome Completo:" id="nomeInput">
                     </div>
                     <div class="campos">
                         <input type="text"  
-                        placeholder="Nome de Exibição:">
+                        placeholder="Email Cadastrado:"  id="emailInput">
                     </div>
                     <div class="campos">
                         <input type="text"  
-                        placeholder="Email Cadastrado:">
-                    </div>
-                    <div class="campos">
-                        <input type="text"  
-                        placeholder="Endereço Cadastrado:">
+                        placeholder="Endereço Cadastrado:"  id="enderecoInput">
                     </div>
                 </div>
             </div>
@@ -81,7 +78,7 @@
                 <div class="grupo_botoes">
                 <!-- <form class="form"> -->
                     <div>
-                        <button id="btnSave" class="btnSave">Salvar</button>
+                        <button id="btnSave" class="btnSave" onclick="salvarPerfil()">Salvar</button>
                     </div>
                     <div>
                         <button id="btnExcluir" class="btnExcluir">Excluir perfil</button>
@@ -93,23 +90,13 @@
 
         
     </main>
-    <footer>
-        <div class="Information">
-            <h3>Atalhos</h3>
-            <a href="../../pages/home/index.html"> <li>Início</li></a>
-            <a href="../../pages/sobreNos/sobreNos.html"><li>Sobre Nós</li></a>
-            <a href="../../pages/coletaSeletiva/coletaSeletiva.html"><li>Coleta Seletiva</li></a>
-            <a href="../../pages/pontosDeColeta/pontosDeColeta.html"><li>Pontos de Coleta</li></a>
-            <a href="../../pages/mapa/mapa.html"><li>Mapa</li></a>
-        
-        </div>
-        
-        
-        <div class="contact">
-            <h3>Contato</h3>
-            <p><span>Email:</span> info@cleanplanet.com</p>
-            <p><span>Telefone:</span> (123) 456-7890</p>
-        </div>
+    <footer><div class="Information">
+        <h3>Atalhos</h3>
+        <a href="../sobreNos/sobreNos.html">Sobre Nós</a>
+        <a href="../pontosDeColeta/pontosDeColeta.html">Ponto de Coleta</a>
+        <a href="../coletaSeletiva/coletaSeletiva.html">Coleta Seletiva</a>
+        <a href="../mapa/mapa.html">Mapa</a>
+    </div>
     
     
     <div class="contact">
@@ -126,115 +113,8 @@
     </div>
     
 </footer> 
-
 <script src="../../js/editarCadastro.js"></script>
-
-<!-- <script>
-    function handleCheckboxClick(clickedCheckboxId, otherCheckboxId) {
-        var clickedCheckbox = document.getElementById(clickedCheckboxId);
-        var otherCheckbox = document.getElementById(otherCheckboxId);
-
-        if (clickedCheckbox.checked) {
-            otherCheckbox.checked = false;
-        }
-    }
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var checkbox1 = document.getElementById('checkbox1');
-        var checkbox2 = document.getElementById('checkbox2');
-        var btnSave = document.getElementById('btnSave');
-        var btnExcluir = document.getElementById('btnExcluir');
-
-        checkbox1.addEventListener('change', function() {
-            if (checkbox1.checked) {
-                checkbox2.checked = false;
-            }
-        });
-
-        checkbox2.addEventListener('change', function() {
-            if (checkbox2.checked) {
-                checkbox1.checked = false;
-            }
-        });
-
-        btnSave.addEventListener('click', function() {
-            salvarPerfil();
-        });
-
-        btnExcluir.addEventListener('click', function() {
-            var confirmacao = confirm("Tem certeza de que deseja excluir o perfil?");
-
-            if (confirmacao) {
-                excluirPerfil();
-            }
-        });
-
-        function salvarPerfil() {
-            var nome = document.querySelector('input[placeholder="Nome Completo:"]').value;
-            var exibicao = document.querySelector('input[placeholder="Nome de Exibição:"]').value;
-            var email = document.querySelector('input[placeholder="Email Cadastrado:"]').value;
-            var endereco = document.querySelector('input[placeholder="Endereço Cadastrado:"]').value;
-
-            // Aqui você pode fazer algo com esses valores, por exemplo, enviá-los para o backend ou salvá-los no localStorage
-            // Exemplo: Salvando no localStorage
-            localStorage.setItem('nome', nome);
-            localStorage.setItem('exibicao', exibicao);
-            localStorage.setItem('email', email);
-            localStorage.setItem('endereco', endereco);
-
-            alert("Perfil salvo com sucesso!");
-        }
-
-        function excluirPerfil() {
-            // Limpar o localStorage
-            localStorage.clear();
-
-            // Exibir alerta de perfil excluído
-            alert("Perfil excluído com sucesso!");
-
-            // Redirecionar para a página de login (substitua "cadastro.html" pelo caminho correto)
-            window.location.href = "/codigo-fonte/pages/cadastro/cadastro.html";
-        }
-
-        // Recuperar dados do localStorage ao carregar a página
-        function carregarDados() {
-            var nome = localStorage.getItem('nome');
-            var exibicao = localStorage.getItem('exibicao');
-            var email = localStorage.getItem('email');
-            var endereco = localStorage.getItem('endereco');
-
-            // Preencher os campos com os dados recuperados
-            document.querySelector('input[placeholder="Nome Completo:"]').value = nome;
-            document.querySelector('input[placeholder="Nome de Exibição:"]').value = exibicao;
-            document.querySelector('input[placeholder="Email Cadastrado:"]').value = email;
-            document.querySelector('input[placeholder="Endereço Cadastrado:"]').value = endereco;
-        }
-
-        // Carregar dados ao carregar a página
-        carregarDados();
-
-        function carregarDadosDoJSON() {
-                fetch("../../json/usuarios.json")  
-                    .then(response => response.json())
-                    .then(data => {
-                        document.getElementById('nomeInput').value = data.nome;
-                        document.getElementById('exibicaoInput').value = data.exibicao;
-                        document.getElementById('emailInput').value = data.email;
-                        document.getElementById('enderecoInput').value = data.endereco;
-                    })
-                    .catch(error => console.error('Erro ao carregar dados do JSON:', error));
-            }
-
-            // Carregar dados ao carregar a página
-            carregarDadosDoJSON();
-    
-    });
-</script> -->
-
-
-
+<script src="../../js/Cadastro.js"></script>
 </body>
 
 

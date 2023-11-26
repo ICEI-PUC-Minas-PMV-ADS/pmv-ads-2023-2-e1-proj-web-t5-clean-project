@@ -163,3 +163,72 @@ O acesso a pagina do mapa, que possui o mapa da cidade de Belo Horizonte, pode s
 
 - Israel Rodrigues Diniz
 
+<hr>
+
+### Tela logout perfil
+
+O acesso para o usuário deve permitir que ele consiga sair de seu perfil.
+
+![Imagem do WhatsApp de 2023-11-26 à(s) 16 21 09_6d0adbaa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/839fc408-251b-45b8-981e-2d2e7eca2e87)
+
+
+#### Requisito atendido
+
+RF-12 : A aplicação deve oferecer uma funcionalidade para que o usuário saia do seu perfil
+
+
+#### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
+
+
+#### Estrutura de Dados
+- cadastro.css
+- cadastro.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+- Luiza Maria da Silva Machado
+
+  <hr>
+
+### Tela Notificação
+
+O acesso para o usuário deve permitir que ele aceite receber notificações.
+
+![Imagem do WhatsApp de 2023-11-26 à(s) 16 21 09_c472526a](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/8a043107-362e-4109-84ac-53bbfc93cb2c)
+
+
+#### Requisito atendido
+
+RF-13: A aplicação deve oferecer uma funcionalidade em que o usuário pode clicar no botão e ser notificado quanto ao dia de coleta.
+
+#### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
+
+
+#### Estrutura de Dados
+- cadastro.css
+- cadastro.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+- Luiza Maria da Silva Machado
+
+  <hr>
+
+
+

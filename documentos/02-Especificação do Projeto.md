@@ -88,7 +88,7 @@
 |ID      | Descrição                                                                                       |Prioridade |
 |--------|-------------------------------------------------------------------------------------------------|-----------|
 | RNF-02 |  A aplicação deve ser compatível com os navegadores                                             | Baixa     | 
-| RNF-03 |  A aplicação deve ser acessível a pessoas deficientes                                           | Médio     | 
+| RNF-03 |  A aplicação deve ser de facil acesso                                                           | Médio     | 
 | RNF-04 |  A aplicação deve garantir que as informações pessoais e sensíveis do usuário seja protegido    | Alta      | 
 
 **Prioridade: Alta / Média / Baixa. 
