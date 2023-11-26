@@ -177,3 +177,127 @@ Verificar se as instruções fornecidas são suficientes para orientar o usuári
   <td>Maria Julia</td>
  </tr>
 </table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-05: Verificar se os usuários conseguem sair de seu perfil e conseguem apertar o botão para receber notificação</td>
+  <td>
+  <ul>
+    <li>RF-12: A aplicação deve oferecer uma funcionalidade para que o usuário saia do seu perfil.</li>
+<li>RF-13: A aplicação deve oferecer uma funcionalidade em que o usuário pode clicar no botão e ser notificado quanto ao dia de coleta.</li>
+ </li>
+    </ul>
+  </td>
+  <td>Verificar a funcionalidade da página de login/cadastro para sair 
+ <li>SAIR:
+Alternância de Abas
+●	Verificar se é possível deslogar do perfil nas outras Abas
+●	Testar o redirecionamento para a página correta após sair (home)
+</li>
+ <li>ALERTA NOTIFICAÇÃO
+ ●	Garantir que quando clicar no botão a mensagem de alerta vai aparecer</li>
+<li>TESTE DE USABILIDADE:
+●	Avaliar a facilidade de uso da interface de saída do site
+●	Se ao clicar no ícone de notificação a mensagem de alerta vai aparecer</li>
+</td>
+  <td>
+   <ol>
+   <li>Acessar a página de Login/Cadastro</li>
+    <li>Preencher os campos (Nome, email, senha e confirmação de senha) com credenciais válidas e não válidas</li>
+    <li>Enviar o formulário sem preencher todos os campos</li>
+    <li>Confirmar cadastro/login</li>
+    <li>Após a confirmação dos dados vai mudar o campo “Olá” para “Olá Bem-vindo(a) nome”
+e logo embaixo vai ter o botão sair</li>
+    <li>Na imagem ao lado vai ter o botão de mensagem para aparecer o alerta</li>
+    </ol>
+  </td>
+  <td>Mensagem de confirmação de login/cadastro ou de erro caso falte algum campo para preencher ou de usuário não existente. Após a confirmação redirecionar para página Home</td>
+  <td>Luiza</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo</td>
+  <td>
+   <ul>
+    <li>RF-01: A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por cores/categoria)</li>
+<li>RF-04: A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar</li>
+<li>RF-06: A aplicação deve informar como fazer o descarte correto de vidro</li>
+    </ul>
+  </td>
+  <td>Verificar se o carrossel funciona sozinho (em um processo automático de ir trocando as imagens) e manualmente.
+ <li>Carrossel:
+Funcionamento automático e manual:
+Testar se o carrossel avança automaticamente pelos slides.
+Verificar se é possível navegar manualmente entre os slides.
+Confirmar se todas as 5 imagens estão aparecendo no carrossel.
+</li>
+ </li>
+</td>
+  <td>
+   <ol>
+   <li>Acessar a página coleta seletiva</li>
+    <li>Verificar o funcionamento do carrossel automático (a troca das imagens automaticamente).</li>
+    <li>Verificar o funcionamento do carrossel de forma manual.</li>
+    </ol>
+   </td>
+  <td>
+   <ol>
+    <li>O carrossel avança automaticamente e permite navegação manual.</li>
+    <li>Todas as 5 imagens são apresentadas no carrossel.</li>
+   </td>
+  <td>Israel Diniz</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-07: Verificar se os usuários conseguem inserir o endereço e o mapa localizar se aquele ponto possui ou não a coleta seletiva, e o horário que o agente de coleta passa no local.</td>
+  <td>
+  <ul>
+    <li>RF-10	A aplicação deve ter uma página com um mapa para que o usuário pesquise o seu endereço e veja a localização do agente de coleta </li>
+    </ul>
+  </td>
+  <td>Verificar se o usuário é informado se o endereço informado possui coleta seletiva domiciliar e o horário que o agente de coleta passa naquele local.
+</td>
+  <td>
+   <ol>
+   <li>Acessar a página do mapa</li>
+    <li>Inserir o endereço que deseja informação sobre a coleta</li>
+    <li>Verificar o funcionamento do mapa no sentido de mostrar o endereço inserido</li>
+    <li>Verificar a funcionalidade de informar o horário do agente de coleta</li>
+    </ol>
+   </td>
+  <td>
+   <ol>
+    <li>O mapa mostra o endereço exato inserido pelo usuário.</li>
+    <li>O resultado mostra o horário do agente de coleta para aquele local e se há ou não a coleta seletiva a domicilio ali.</li>
+   </td>
+  <td>Israel Diniz</td>
+ </tr>
+</table>

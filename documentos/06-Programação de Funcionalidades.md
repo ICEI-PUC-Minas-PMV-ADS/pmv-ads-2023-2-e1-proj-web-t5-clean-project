@@ -68,25 +68,90 @@ Letícia Pires Lopes de Souza
 
 <hr>
 
-### Tela 
-
-
-
-
+### Tela Editar Cadastro
+O acesso a parte de editar cadastro pode ser feito através das página: Início,Sobre,Coleta seletiva,Pontos de coleta e Mapa.
+![Imagem do WhatsApp de 2023-11-25 à(s) 17 16 44_2bd8c145](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/90eca16a-e117-4f22-b132-f301f9c97d92)
 
 #### Requisito atendido
+RF-09: A aplicação deve ter uma página de perfil do usuário (com os dados) e configurações
 
+#### Artefatos da funcionalidade
+HTML
+CSS
+JavaScript
+
+#### Estrutura de Dados
+
+editarCadastro.html
+editarCadastro.css
+editarCadastro.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+Felipe Augusto Guimaraes Dante
+
+<hr>
+
+### Tela Coleta Seletiva
+
+O acesso a pagina de coleta seletiva, que possui um carrossel de imagens com instruções para a coleta de lixo, pode ser feito através das página: Início, Sobre, Pontos de coleta e Mapa.
+
+![Coleta Seletiva](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/ed4a6aba-2d25-4cfe-9a05-7ffdf081d315)
+
+#### Requisito atendido
+- RF-01:	A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por cores/categoria)
+- RF-04:	A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar
+- RF-06:	A aplicação deve informar como fazer o descarte correto de vidro
 
 
 
 #### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
+
+#### Estrutura de Dados
+- coletaSeletiva.html
+- coletaSeletiva.css
+- coletaSeletiva.js
+
+#### Instruções de acesso
+
+- O usuário poderá dar um click em cada um dos botões que estão no carrossel para navegar entre as imagens de instruções.
+
+#### Responsável
+
+- Israel Rodrigues Diniz
 
 
+<hr>
+
+### Tela Mapa 
+O acesso a pagina do mapa, que possui o mapa da cidade de Belo Horizonte, pode ser feito através das página: Início, Sobre, Pontos de coleta e Coleta Seletiva.
+
+![Mapa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/edef3136-d568-4881-aea7-8cd91c3338c3)
+
+
+#### Requisito atendido
+- RF-10:	A aplicação deve ter uma página com um mapa para que o usuário pesquise o seu endereço e veja a localização do agente de coleta (Não está funcional, o mapa é apenas visual!!!)
+
+
+
+#### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
 
 
 #### Estrutura de Dados
-
-
+- mapa.html
+- mapa.css
+- mapa.js
 
 
 #### Instruções de acesso
@@ -96,6 +161,5 @@ Letícia Pires Lopes de Souza
 
 #### Responsável
 
+- Israel Rodrigues Diniz
 
-
-<hr>
