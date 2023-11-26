@@ -212,7 +212,6 @@ Alternância de Abas
    <ol>
    <li>Acessar a página de Login/Cadastro</li>
     <li>Preencher os campos (Nome, email, senha e confirmação de senha) com credenciais válidas e não válidas</li>
-    <li>Enviar o formulário sem preencher todos os campos</li>
     <li>Confirmar cadastro/login</li>
     <li>Após a confirmação dos dados vai mudar o campo “Olá” para “Olá Bem-vindo(a) nome”
 e logo embaixo vai ter o botão sair</li>
