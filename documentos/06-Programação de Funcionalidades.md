@@ -133,8 +133,8 @@ O acesso a pagina de coleta seletiva, que possui um carrossel de imagens com ins
 
 ### Tela Mapa 
 O acesso a pagina do mapa, que possui o mapa da cidade de Belo Horizonte, pode ser feito através das página: Início, Sobre, Pontos de coleta e Coleta Seletiva.
-![Uploading Mapa.png…]()
 
+![Mapa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/edef3136-d568-4881-aea7-8cd91c3338c3)
 
 
 #### Requisito atendido
