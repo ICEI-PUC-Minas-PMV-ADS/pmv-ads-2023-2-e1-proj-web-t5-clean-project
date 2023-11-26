@@ -30,6 +30,36 @@ Realizar o Login:
 Sair do perfil:
   
   ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/5c5561c2-f6e1-453f-9cf4-5a75e239c56b)
+  
 
 </li>
   <hr>
+
+
+
+  <ol>
+  <li> CT-01: Verificar o funcionamento dos links na tela Home.
+
+  Responsável: Luiza Maria Da Silva Machado
+
+Realizar o redirecionamento das categorias nas paginas refentes:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144967071/2cb33fdc-edb3-4431-9f69-5df74cc78756)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144967071/13e06431-8270-4e72-9fd9-34033e430283)
+
+  </li>
+  </ol>
+  <hr>
+ <ol>
+  <li>CT-02: Verificar se os usuários conseguem enviar uma dúvida.
+
+  Responsável: Luiza Maria Da Silva Machado
+
+Realizar o redirecionamento das duvidas frequente:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144967071/424a9f65-3e8a-4b05-a817-8fe6a1083101)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144967071/9d4f096c-c2cf-4038-ad6a-2bcec9ea8cd6)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144967071/0830c115-816f-4f35-a958-265138786aa8)
+
+
+  </li>
+  </ol>
+
