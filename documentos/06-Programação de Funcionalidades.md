@@ -230,5 +230,102 @@ RF-13: A aplicação deve oferecer uma funcionalidade em que o usuário pode cli
 
   <hr>
 
+  
+### Tela de Cadastro
+
+Na interface, os campos de acesso à plataforma - login e cadastro - estão presentes. Na seção destinada ao cadastro, os usuários podem preencher as informações necessárias para criar uma conta no site
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/fcebda10-e2f1-4e35-9292-847841c0309d)
+
+
+#### Requisito atendido
+
+RF-O2 : A aplicação deve oferecer uma funcionalidade para que o usuário se cadastre
+
+#### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
+
+
+#### Estrutura de Dados
+- cadastro.css
+- cadastro.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+- Maria Júlia Souza Santos
+
+  <hr>
+
+  ### Tela de Cadastro/Login
+
+Na tela, estão visíveis os campos de acesso à plataforma: login e cadastro. A seção branca representa o login, onde os usuários precisam inserir apenas o e-mail e a senha para acessar o site
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/29e17657-7802-4224-b4ef-77bf68ad4693)
+
+
+#### Requisito atendido
+
+RF-11: A aplicação deve oferecer uma funcionalidade para que o usuário faça login
+
+#### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
+
+
+#### Estrutura de Dados
+- cadastro.html
+- cadastro.css
+- cadastro.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+- Maria Júlia Souza Santos
+
+  <hr>
+
+Na página Pontos de Coleta é possível o usuário pesquisar por sua cidade e filtrar o tipo de lixo que ela teria interesse em descartar usando o filtro, com base nessas informações ele consegue visualizar todos os pontos correspondente ao descarte desejado, sendo mostrado em sequência: REGIÃO, BAIRRO E RUA/AVENIDA do local
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/420cd4d3-743e-4959-9c90-8c8cd2599dd7)
+
+#### Requisito atendido
+
+| RF-13 |A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional.
+
+#### Artefatos da funcionalidade
+- HTML
+- CSS
+- JavaScript
+
+
+#### Estrutura de Dados
+- pontoDeColeta.html
+- pontoDeColeta.css
+- pontoDeColeta.js
+
+#### Instruções de acesso
+
+
+
+
+#### Responsável
+
+- Maria Júlia Souza Santos
+
+  <hr>
+
+
 
 
