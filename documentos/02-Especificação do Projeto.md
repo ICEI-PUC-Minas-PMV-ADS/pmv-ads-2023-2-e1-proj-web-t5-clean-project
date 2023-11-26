@@ -80,7 +80,7 @@
 | RF-13 | A aplicação deve oferecer uma funcionalidade em que o usuário pode clicar no botão e ser notificado quanto ao dia de coleta                             | Alta   
 | RF-13 |A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional.                           | Alta   
 
-| RF-13 |A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional.                           | Alta   
+| RF-14 |A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional.                           | Alta   
 
 **Prioridade: Alta / Média / Baixa. 
 
