@@ -236,8 +236,10 @@ e logo embaixo vai ter o botão sair</li>
   <tr>
   <td>CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo</td>
   <td>
-  <ul>
-    <li> </li>
+   <ul>
+    <li>RF-01: A aplicação deve disponibilizar informações a forma correta de fazer a coleta seletiva (por cores/categoria)</li>
+<li>RF-04: A aplicação deve fornecer dicas de como ensacar e embalar o lixo a diminuir a chance de rasgar</li>
+<li>RF-06: A aplicação deve informar como fazer o descarte correto de vidro</li>
     </ul>
   </td>
   <td>Verificar se o carrossel funciona sozinho (em um processo automático de ir trocando as imagens) e manualmente.
@@ -260,6 +262,41 @@ Confirmar se todas as 5 imagens estão aparecendo no carrossel.
    <ol>
     <li>O carrossel avança automaticamente e permite navegação manual.</li>
     <li>Todas as 5 imagens são apresentadas no carrossel.</li>
+   </td>
+  <td>Israel Diniz</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-07: Verificar se os usuários conseguem inserir o endereço e o mapa localizar se aquele ponto possui ou não a coleta seletiva, e o horário que o agente de coleta passa no local.</td>
+  <td>
+  <ul>
+    <li>RF-10	A aplicação deve ter uma página com um mapa para que o usuário pesquise o seu endereço e veja a localização do agente de coleta </li>
+    </ul>
+  </td>
+  <td>Verificar se o usuário é informado se o endereço informado possui coleta seletiva domiciliar e o horário que o agente de coleta passa naquele local.
+</td>
+  <td>
+   <ol>
+   <li>Acessar a página do mapa</li>
+    <li>Inserir o endereço que deseja informação sobre a coleta</li>
+    <li>Verificar o funcionamento do mapa no sentido de mostrar o endereço inserido</li>
+    <li>Verificar a funcionalidade de informar o horário do agente de coleta</li>
+    </ol>
+   </td>
+  <td>
+   <ol>
+    <li>O mapa mostra o endereço exato inserido pelo usuário.</li>
+    <li>O resultado mostra o horário do agente de coleta para aquele local e se há ou não a coleta seletiva a domicilio ali.</li>
    </td>
   <td>Israel Diniz</td>
  </tr>
