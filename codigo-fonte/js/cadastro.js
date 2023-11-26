@@ -1,10 +1,14 @@
-window.addEventListener('load', trocarCadastrarPorSair);
+window.addEventListener("load", trocarCadastrarPorSair);
 
 //  Transição
 const btnSignin = document.querySelector("#signin");
 const btnSignup = document.querySelector("#signup");
 const body = document.querySelector("body");
 
+const eyeIcons = document.querySelectorAll(".eyeIcon");
+
+
+//  Transição
 btnSignin.addEventListener("click", function () {
   body.className = "sign-in-js";
 });
@@ -12,6 +16,7 @@ btnSignin.addEventListener("click", function () {
 btnSignup.addEventListener("click", function () {
   body.className = "sign-up-js";
 });
+
 
 //Validação
 const emailInput = document.querySelector('input[type="email"]');
@@ -26,31 +31,33 @@ form.addEventListener("submit", function (e) {
 });
 
 function logar() {
-  const login = document.getElementById("Login").value;
-  const senha = document.getElementById("Senha").value;
+  debugger;
+  const email = document.getElementById("email2").value.trim();
+  const senha = document.getElementById("senha2").value.trim();
 
-  fetch("../../json/usuários.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Erro ao carregar usuário");
-      }
-      return response.json();
-    })
+  let usuariosLocal = localStorage.getItem("usuarios");
+  var usuariosArmazenados = JSON.parse(usuariosLocal);
 
-    .then((usuarios) => {
-      const usuarioEncontrado = usuarios.find(
-        (usuario) => usuario.email === login && usuario.senha === senha
-      );
+  var usuarioEncontrado;
+  var nomeUsuario;
 
-      if (usuarioEncontrado) {
-        alert("Sucesso!");
-        location.href = "../home/index.html";
-      } else {
-        alert("Usuário ou senha incorretos!");
-      }
-    })
+  usuariosArmazenados.forEach((usuario) => {
+    if (usuario.email == email && usuario.senha == senha) {
+      usuario.logado = true;
+      usuarioEncontrado = true;
+      nomeUsuario = usuario.nome;
+    }
+  });
 
-    .catch((error) => console.error("Erro:", error));
+  if (usuarioEncontrado) {
+    localStorage.setItem("usuarios", JSON.stringify(usuariosArmazenados));
+
+    alert(`Bem-vindo, ${usuario.nome}! Login bem-sucedido.`);
+
+    location.href = "../home/index.html";
+  } else {
+    alert("Usuário ou senha incorretos!");
+  }
 }
 
 // Função para cadastrar um novo usuário
@@ -59,6 +66,9 @@ function cadastrarUsuario(nome, email, senha) {
     nome: nome,
     email: email,
     senha: senha,
+    logado: false,
+    cep:null,
+    endereco:null
   };
 
   let usuarios = localStorage.getItem("usuarios");
@@ -67,9 +77,9 @@ function cadastrarUsuario(nome, email, senha) {
   usuarios.push(novoUsuario);
 
   localStorage.setItem("usuarios", JSON.stringify(usuarios));
-  //window.location.href = '../home/index.html';
 
   trocarCadastrarPorSair();
+  window.location.href = "../../pages/home/index.html";
 }
 
 //função para sair tela inical
@@ -79,23 +89,36 @@ function trocarCadastrarPorSair() {
   const containerCadastro = document.getElementById("login");
 
   if (usuarioLogado != null) {
-
     var usuariosArmazenados = JSON.parse(usuarioLogado);
 
-    containerCadastro.innerHTML =
-    `<span><span class="ola">Olá! Bem-vindo(a) ${usuariosArmazenados[0].nome} <br></span><br><a href="../home/index.html" class="cadastro" onclick="deslogarUsuario()">Sair</a></span>`
-    
+    usuariosArmazenados.forEach((usuario) => {
+      if (usuario.logado) {
+        containerCadastro.innerHTML = ` <div>
+
+        <button onclick="Notificacao()">Enviar Notificação</button>
+      </div><span> <span class="ola">Olá! Bem-vindo(a) ${usuario.nome} <br></span><br><a href="../home/index.html" class="cadastro" onclick="deslogarUsuario()">Sair</a></span>`;
+      }
+    });
   } else {
     containerCadastro.innerHTML =
       '<span><span class="ola">Olá!</span><br>Faça seu <a href="../cadastro/cadastro.html" class="cadastro">cadastro</a> para receber <br>notificações sobre a coleta seletiva da sua rua</span>';
   }
 }
 
-
 //função limpar registro de usuario
-function deslogarUsuario(){
-   
-    localStorage.clear();
+function deslogarUsuario() {
+  let usuarioLogado = localStorage.getItem("usuarios");
+
+  if (usuarioLogado != null) {
+    var usuariosArmazenados = JSON.parse(usuarioLogado);
+
+    usuariosArmazenados.forEach((usuario) => {
+      if (usuario.logado) {
+        usuario.logado = false;
+      }
+    });
+    localStorage.setItem("usuarios", JSON.stringify(usuariosArmazenados));
+  }
 }
 
 const formCadastro = document.querySelector(".form");
@@ -113,88 +136,87 @@ formCadastro.addEventListener("submit", function (event) {
 });
 
 function togglePasswordVisibility(inputId) {
-    const inputSenha = document.getElementById(inputId);
+  const inputSenha = document.getElementById(inputId);
 
-    if (inputSenha.getAttribute('type') === 'password') {
-        inputSenha.setAttribute('type', 'text');
-    } else {
-        inputSenha.setAttribute('type', 'password');
-    }
+  if (inputSenha.getAttribute("type") === "password") {
+    inputSenha.setAttribute("type", "text");
+  } else {
+    inputSenha.setAttribute("type", "password");
+  }
 }
-    const inputSenha = document.getElementById(inputId);
+const inputSenha = document.getElementById(inputId);
 
-    if (inputSenha.getAttribute('type') === 'password') {
-        inputSenha.setAttribute('type', 'text');
-    } else {
-        inputSenha.setAttribute('type', 'password');
-    }
+if (inputSenha.getAttribute("type") === "password") {
+  inputSenha.setAttribute("type", "text");
+} else {
+  inputSenha.setAttribute("type", "password");
+}
 
 //LOGIN Usuário
-
+/*
 function logar() {
-    const email = document.getElementById('email2').value.trim(); 
-    const senha = document.getElementById('senha2').value.trim(); 
+  const email = document.getElementById("email2").value.trim();
+  const senha = document.getElementById("senha2").value.trim();
 
-    fetch('../../json/usuarios.json') 
-        .then(response => response.json()) 
-        .then(users => {
-            console.log(users); 
-            const user = users.find(u => u.email.trim() === email && u.senha.trim() === senha);
+  const users = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-            if (user) {
-                alert(`Bem-vindo, ${user.nome}! Login bem-sucedido.`);
-                setTimeout(function() {
-                    window.location.href = '../../pages/home/index.html'; 
-                }, 2000); 
-            } else {
-                alert('Credenciais inválidas. Tente novamente.');
-            }
-        })
-        .catch(error => {
-            console.error('Erro ao carregar os usuários:', error);
-        });
-}
+  const user = users.find((u) => u.email === email && u.senha === senha);
+
+  if (user) {
+    alert(`Bem-vindo, ${user.nome || user.email}! Login bem-sucedido.`);
+    setTimeout(function () {
+      window.location.href = "../../pages/home/index.html";
+    }, 1000);
+  } else {
+    alert("Credenciais inválidas. Tente novamente.");
+  }
+}*/
+
 
 function cadastrar() {
-  debugger
+  const nome = document.getElementById("nome").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const senha = document.getElementById("senha1").value.trim();
+  const confirmarSenha = document.getElementById("confirmSenha").value.trim();
 
-    const email = document.getElementById('email').value.trim();
-    const senha = document.getElementById('senha1').value.trim();
-    const confirmarSenha = document.getElementById('confirmSenha').value.trim();
+  if (email === "" || senha === "" || confirmarSenha === "") {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
 
-    if (email === '' || senha === '' || confirmarSenha === '') {
-        alert('Por favor, preencha todos os campos.');
-        return;
-    }
+  // Validação para verificar se as senhas coincidem
+  if (senha !== confirmarSenha) {
+    alert("As senhas não coincidem. Por favor, insira senhas iguais.");
+    return;
+  }
 
-    // Validação para verificar se as senhas coincidem
-    if (senha !== confirmarSenha) {
-        alert('As senhas não coincidem. Por favor, insira senhas iguais.');
-        return;
-    }
+  const users = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+  // Verifica se o email já está cadastrado
+  const existingUser = users.find((u) => u.email === email);
+  if (existingUser) {
+    alert("Este email já está cadastrado. Por favor, utilize outro email.");
+    return;
+  }
+
+  // Criar um novo usuário
+  const novoUsuario = {
+    nome: nome,
+    email: email,
+    senha: senha,
+    logado: false,
+    cep:null,
+    endereco:null
+  };
+
+  // Adicionar o novo usuário à lista existente
+  users.push(novoUsuario);
+
+  // Atualizar o localStorage com a lista atualizada de usuários
+  localStorage.setItem("usuarios", JSON.stringify(users));
+
+  alert("Cadastro realizado com sucesso!");
 
 
-    // Criar um novo usuário
-    const novoUsuario = {
-        "email": email,
-        "senha": senha
-    };
-var teste;
-    fetch('../../json/usuarios.json')
-        .then(response => response.json())
-        .then(users => {
-            // Adicionar o novo usuário à lista existente
-            users.push(novoUsuario);
-          teste = users;
-            console.log(users);
-
-            alert('Cadastro realizado com sucesso!');
-
-            // Redirecionar para a página de login ou para outra página após o cadastro
-            window.location.href = '../../pages/home/index.html'; 
-        })
-        .catch(error => {
-            console.error('Erro ao carregar os usuários:', error);
-        });
-        console.log(teste)
+  // Redirecionar para a página de login ou para outra página após o cadastro
 }

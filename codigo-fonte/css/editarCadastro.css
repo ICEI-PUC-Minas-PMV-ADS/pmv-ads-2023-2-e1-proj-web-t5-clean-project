@@ -17,6 +17,14 @@
     align-items: center;
     height: 100vh;
 }
+    @media screen and (max-width: 768px) {
+        .container{
+            width: 90%;
+            padding: 0 10px;
+        }
+    }
+
+
 .content{
     /* border: 1px solid red; */
     border-radius: 15px;
@@ -179,7 +187,6 @@ color: grey;
 .btnExcluir:hover{
     background: #0ec1e0;
 }
-
 
 
 

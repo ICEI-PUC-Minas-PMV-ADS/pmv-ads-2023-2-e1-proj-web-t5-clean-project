@@ -1,3 +1,5 @@
+window.addEventListener("load", carregarDadosDoJSON);
+
 function handleCheckboxClick(clickedCheckboxId, otherCheckboxId) {
  const clickedCheckbox = document.getElementById(clickedCheckboxId);
  const otherCheckbox = document.getElementById(otherCheckboxId);
@@ -5,40 +7,60 @@ function handleCheckboxClick(clickedCheckboxId, otherCheckboxId) {
       otherCheckbox.checked = false;
   }
 }
+
+
+//FUNCAO DE SALVAR PERFIL
 function salvarPerfil() {
-  var nome = document.querySelector('input[placeholder="Nome Completo:"]').value;
-  var exibicao = document.querySelector('input[placeholder="Nome de Exibição:"]').value;
-  var email = document.querySelector('input[placeholder="Email Cadastrado:"]').value;
-  var endereco = document.querySelector('input[placeholder="Endereço Cadastrado:"]').value;
 
+    debugger
+    var nome = document.querySelector('input[placeholder="Nome Completo:"]').value;    
+    var email = document.querySelector('input[placeholder="Email Cadastrado:"]').value;
+    var endereco = document.querySelector('input[placeholder="Endereço Cadastrado:"]').value;
   
-  console.log("Nome: ", nome);
-  console.log("Exibição: ", exibicao);
-  console.log("Email: ", email);
-  console.log("Endereço: ", endereco);
+    let usuariosLocal = localStorage.getItem("usuarios");
+    var usuariosArmazenados = JSON.parse(usuariosLocal);
 
-  alert("Perfil salvo com sucesso!");
-}
+    usuariosArmazenados.forEach((usuario) => {
+        if (usuario.logado) {
+            usuario.nome = nome
+            usuario.email = email
+            usuario.endereco = endereco
+        }
+      });
+
+      localStorage.setItem("usuarios", JSON.stringify(usuariosArmazenados));
+
+    alert("Perfil salvo com sucesso!");
+  }
+
+
 
 // Função para excluir o perfil
 function excluirPerfil() {
   alert("Perfil excluído com sucesso!");
 
+  
+
   // Redirecionar para a página de login
   window.location.href = "/codigo-fonte/pages/cadastro/cadastro.html";
 }
 
+
+
 // Função para carregar dados do JSON
 function carregarDadosDoJSON() {
-  fetch("../../json/usuarios.json")
-      .then(response => response.json())
-      .then(data => {
-          document.getElementById('nomeInput').value = data.nome;
-          document.getElementById('exibicaoInput').value = data.exibicao;
-          document.getElementById('emailInput').value = data.email;
-          document.getElementById('enderecoInput').value = data.endereco;
-      })
-      .catch(error => console.error('Erro ao carregar dados do JSON:', error));
+
+    let usuariosLocal = localStorage.getItem("usuarios");
+    var usuariosArmazenados = JSON.parse(usuariosLocal);
+
+    usuariosArmazenados.forEach((usuario) => {
+        if (usuario.logado) {
+            document.getElementById('nomeInput').value = usuario.nome;        
+            document.getElementById('emailInput').value = usuario.email;
+            document.getElementById('enderecoInput').value = usuario.endereco;
+        }
+      });
+
 }
 
 // Carregar dados ao carregar a página

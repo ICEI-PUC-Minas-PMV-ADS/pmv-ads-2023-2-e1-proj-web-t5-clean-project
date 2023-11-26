@@ -48,19 +48,15 @@
                 <div>
                     <div class="campos">
                         <input type="text"  
-                        placeholder="Nome Completo:">
+                        placeholder="Nome Completo:" id="nomeInput">
                     </div>
                     <div class="campos">
                         <input type="text"  
-                        placeholder="Nome de Exibição:">
+                        placeholder="Email Cadastrado:"  id="emailInput">
                     </div>
                     <div class="campos">
                         <input type="text"  
-                        placeholder="Email Cadastrado:">
-                    </div>
-                    <div class="campos">
-                        <input type="text"  
-                        placeholder="Endereço Cadastrado:">
+                        placeholder="Endereço Cadastrado:"  id="enderecoInput">
                     </div>
                 </div>
             </div>
@@ -82,7 +78,7 @@
                 <div class="grupo_botoes">
                 <!-- <form class="form"> -->
                     <div>
-                        <button id="btnSave" class="btnSave">Salvar</button>
+                        <button id="btnSave" class="btnSave" onclick="salvarPerfil()">Salvar</button>
                     </div>
                     <div>
                         <button id="btnExcluir" class="btnExcluir">Excluir perfil</button>
@@ -117,7 +113,8 @@
     </div>
     
 </footer> 
-<script src="../../js/cadastro.js"></script>
+<script src="../../js/editarCadastro.js"></script>
+<script src="../../js/Cadastro.js"></script>
 </body>
 
 

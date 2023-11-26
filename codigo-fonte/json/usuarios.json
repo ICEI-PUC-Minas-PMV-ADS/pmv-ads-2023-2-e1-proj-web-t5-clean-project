@@ -3,20 +3,29 @@
       "id": 1,
       "nome": "Marcelo",
       "email": "marcelo@gmail.com",
-      "senha": "Marcelo123"
+      "senha": "Marcelo123",
+      "logado": true,
+      "cep": "31080470",
+      "endereco":"Rua São Guilherme Santa Inês Belo Horizonte, MG"
     },
     
     {
       "id": 2,
       "nome": "Luiz ",
       "email": "luiz@gmail.com",
-      "senha": "Luiz456"
+      "senha": "Luiz456",
+      "logado": false,
+      "cep": "31975350",
+      "endereco":"Rua A Jardim Vitória Belo Horizonte, MG"
     },
     
     {
         "id": 3,
         "nome": "Anna",
         "email": "annamarino@gmail.com",
-        "senha": "Aninha123"
+        "senha": "Aninha123",
+        "logado": false,
+        "cep": "30590250",
+        "endereco":"Rua Sargento Vilmar de Oliveira Betânia Belo Horizonte, MG"
     }
 ]
