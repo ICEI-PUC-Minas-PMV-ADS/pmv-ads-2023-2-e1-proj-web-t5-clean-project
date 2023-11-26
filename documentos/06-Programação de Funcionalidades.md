@@ -302,7 +302,7 @@ Na página Pontos de Coleta é possível o usuário pesquisar por sua cidade e f
 
 #### Requisito atendido
 
-| RF-13 |A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional.
+| RF-14|A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional.
 
 #### Artefatos da funcionalidade
 - HTML
