@@ -5,28 +5,36 @@ function handleCheckboxClick(clickedCheckboxId, otherCheckboxId) {
       otherCheckbox.checked = false;
   }
 }
+
+
+//FUNCAO DE SALVAR PERFIL
 function salvarPerfil() {
-  var nome = document.querySelector('input[placeholder="Nome Completo:"]').value;
-  var exibicao = document.querySelector('input[placeholder="Nome de Exibição:"]').value;
-  var email = document.querySelector('input[placeholder="Email Cadastrado:"]').value;
-  var endereco = document.querySelector('input[placeholder="Endereço Cadastrado:"]').value;
-
+    var nome = document.querySelector('input[placeholder="Nome Completo:"]').value;
+    var exibicao = document.querySelector('input[placeholder="Nome de Exibição:"]').value;
+    var email = document.querySelector('input[placeholder="Email Cadastrado:"]').value;
+    var endereco = document.querySelector('input[placeholder="Endereço Cadastrado:"]').value;
   
-  console.log("Nome: ", nome);
-  console.log("Exibição: ", exibicao);
-  console.log("Email: ", email);
-  console.log("Endereço: ", endereco);
+    console.log("Nome: " + nome + "\n" +
+                "Exibição: " + exibicao + "\n" +
+                "Email: " + email + "\n" +
+                "Endereço: " + endereco);
+  
+    alert("Perfil salvo com sucesso!");
+  }
 
-  alert("Perfil salvo com sucesso!");
-}
+
 
 // Função para excluir o perfil
 function excluirPerfil() {
   alert("Perfil excluído com sucesso!");
 
+  
+
   // Redirecionar para a página de login
   window.location.href = "/codigo-fonte/pages/cadastro/cadastro.html";
 }
+
+
 
 // Função para carregar dados do JSON
 function carregarDadosDoJSON() {
