@@ -83,5 +83,17 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-pr
 </ol>
 
 <hr>
+
+CT-07: Verificar se os usuários conseguem inserir o endereço e o mapa localizar se aquele ponto possui ou não a coleta seletiva, e o horário que o agente de coleta passa no local.
+
+ Responsável: Maria Júlia Souza Santos
+
+ Verificar se o usuário é informado se o endereço informado possui coleta seletiva domiciliar e o horário que o agente de coleta passa naquele local. 
+
+ NÃO FOI POSSÍVEL REALIZAR O TESTE, POIS O CAMPO DE BUSCA ESTÁ SEM FUNCIONALIDADE
+
+ 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/0ff7c698-bd4c-435d-8d7b-812321104506
+
   
 
