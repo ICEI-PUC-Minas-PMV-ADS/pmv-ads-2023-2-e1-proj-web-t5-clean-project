@@ -17,13 +17,16 @@ RF-08: A aplicação deve conter dúvidas frequentes para que os usuários possa
 
 #### Artefatos da funcionalidade
 
-- index.html
-- home.css
+HTML
+CSS
+JavaScript
 
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+index.html
+home.css
+home.js
 
 
 #### Instruções de acesso
@@ -49,12 +52,16 @@ RF-07: A aplicação deve fornecer uma página home em que o usuário poderá ve
 
 #### Artefatos da funcionalidade
 
-- index.html
-- home.css
+HTML
+CSS
+JavaScript
+
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+index.html
+home.css
+home.js
 
 
 #### Instruções de acesso
