@@ -65,11 +65,9 @@ Sair do perfil:
 
 </li>
 
-  <hr>
 
-<li>
 
-<li> CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo
+ CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo
 
   Responsável: Maria Júlia Souza Santos
 
