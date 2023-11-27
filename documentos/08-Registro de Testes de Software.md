@@ -33,6 +33,60 @@ Enviar uma dúvida no campo exclusivo:
 <hr>
 
 <ol>
+  <li>CT-03: Verificar se os usuários conseguem fazer o cadastro
+    Responsável: Felipe Dantas
+    
+Realizando o cadastro de perfil:
+
+![Imagem do WhatsApp de 2023-11-26 à(s) 22 53 45_f0252cdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/487aa543-e0f4-4bc5-9b22-b401d6557e4b)
+
+![Imagem do WhatsApp de 2023-11-26 à(s) 22 53 45_4e9fbdfa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/852a6eaa-ba69-416f-b3a9-2a5f7f2b1c11)
+
+  </li>
+  <li>
+  Realizando o login:
+    
+  ![Imagem do WhatsApp de 2023-11-26 à(s) 22 53 45_2c88e27d](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/470bb0f5-2d47-433e-a6ae-34fceda9f83d)
+  ![Imagem do WhatsApp de 2023-11-26 à(s) 22 53 45_0afdf37f](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/2330cbc6-7539-47e4-bff7-2b9457701427)
+
+ Tentando Login com credências incorretas:
+  ![Imagem do WhatsApp de 2023-11-26 à(s) 22 53 45_8a0c2ffe](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/56510e44-71b6-4fdc-a765-fb6c128005ca)
+
+Tentando fazer  cadastro com credenciais já existentes no sistema
+![Imagem do WhatsApp de 2023-11-26 à(s) 22 53 46_940aad76](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/88ccdc55-70bc-49f2-8dc7-f907a5b9a011)
+
+Tentando dar continuidade sem preencher o formulário completo:
+![Imagem do WhatsApp de 2023-11-26 à(s) 22 53 46_89b339da](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/3b283bcd-82f6-4b30-a5b0-9d0b91cff28b)
+  </li>
+</ol>
+
+<ol>
+  <li>CT-04: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo.
+    Responsável: Felipe Dantas
+
+Campo de Busca por tipo de lixo e cidade:
+  ![Imagem do WhatsApp de 2023-11-26 à(s) 23 18 09_4cbae4b3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/68264cdc-de72-4fb6-b493-5ad1d7c7f83e)
+  </li>
+  <li>
+    Resposta do ponto de coleta ao usuário com o tipo de lixo e cidade desejada:
+    
+![Imagem do WhatsApp de 2023-11-26 à(s) 23 18 09_582bcc14](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/5bc760bf-4198-49ff-bd5c-171e0eb518ea)
+
+  </li>
+
+  <li>
+    Carrossel com a troca de imagens, funcionando perfeitamente:
+    
+  ![Imagem do WhatsApp de 2023-11-26 à(s) 23 18 09_5e8b44e0](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/be16db5c-07d4-44bf-8e8b-6fed23b3e8a0)
+![Imagem do WhatsApp de 2023-11-26 à(s) 23 18 09_e5908cc1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/f314450c-0d54-4475-b236-f15c806196c7)
+![Imagem do WhatsApp de 2023-11-26 à(s) 23 18 10_461b2cdd](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/e34dfb2d-b52c-42f1-b296-46140c50b434)
+
+  </li>
+</ol>
+
+<hr>
+
+<ol>
   <li> CT-05: Verificar se os usuários conseguem fazer cadastro de login, apertar o botão para receber notificação e sair da conta.
 
   Responsável: Leticia Pires Lopes de Souza
@@ -84,6 +138,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-pr
 
 <hr>
 
+<ol>
 CT-07: Verificar se os usuários conseguem inserir o endereço e o mapa localizar se aquele ponto possui ou não a coleta seletiva, e o horário que o agente de coleta passa no local.
 
  Responsável: Maria Júlia Souza Santos
@@ -94,7 +149,7 @@ CT-07: Verificar se os usuários conseguem inserir o endereço e o mapa localiza
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/9f2fc178-5c75-4509-8cff-669ebbe69d08
 
-
+</ol>
 
  <hr>
 
