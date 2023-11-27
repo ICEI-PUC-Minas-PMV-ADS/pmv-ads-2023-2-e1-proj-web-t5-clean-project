@@ -11,16 +11,13 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 Realizar o redirecionamento das categorias nas paginas refentes:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144967071/2cb33fdc-edb3-4431-9f69-5df74cc78756)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144967071/13e06431-8270-4e72-9fd9-34033e430283)
-
   </li>
   </ol>
 
 <hr>
-
-  <ol>
   
-  <hr>
  <ol>
+   
   <li>CT-02: Verificar se os usuários conseguem enviar uma dúvida.
 
   Responsável: Luiza Maria Da Silva Machado
@@ -62,13 +59,12 @@ Sair do perfil:
   
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144860133/8d60ba2e-bb1c-47cd-aa61-6bcbd0c280f7)
   
-
 </li>
-
+</ol>
 
 <hr>
 
- CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo
+<li> CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo
 
   Responsável: Maria Júlia Souza Santos
 
@@ -76,14 +72,12 @@ Sair do perfil:
 
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/66154f0c-a171-402e-9b0e-117216c75682
-
- Verificar o funcionamento do carrossel de forma manual.
+</li>
+ <li>Verificar o funcionamento do carrossel de forma manual.
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/4b23eb87-ed8a-4ffd-9e40-ed68a3e0fba7
 
-  
-  
-
+</li>
   
 
   
