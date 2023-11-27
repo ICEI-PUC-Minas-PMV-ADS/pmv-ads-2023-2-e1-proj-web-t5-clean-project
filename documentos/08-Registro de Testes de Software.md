@@ -66,6 +66,7 @@ Sair do perfil:
 </li>
 
 
+<hr>
 
  CT-06: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo
 
@@ -79,9 +80,6 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-pr
  Verificar o funcionamento do carrossel de forma manual.
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/4b23eb87-ed8a-4ffd-9e40-ed68a3e0fba7
-
-</li> 
-
 
   
   
