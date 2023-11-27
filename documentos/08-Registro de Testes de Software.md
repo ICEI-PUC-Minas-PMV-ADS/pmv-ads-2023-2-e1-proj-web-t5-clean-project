@@ -95,8 +95,38 @@ CT-07: Verificar se os usuários conseguem inserir o endereço e o mapa localiza
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/9f2fc178-5c75-4509-8cff-669ebbe69d08
 
 
- 
 
+ <hr>
 
+<hr>
+
+<ol>
+<li> CT-08: Verificar que os usuários conseguem salvar alterações no seu perfil e que conseguem excluir sua conta.
   
+  Responsável: Israel Diniz
+
+Primeiro, o nome original que foi inserido ao criar a conta:
+
+![t1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/0dc98b22-b7ad-4e97-95c6-266284de59b7)
+
+Em seguida a alteração e o click do botão "Salvar", o nome novo inserido já aparece no primeiro campo do formulário atualizado:
+![t2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/a4d0e82b-4f09-49d6-9f29-4c52eaf5162a)
+
+
+</li>
+ <li>Verificar que o usuário consegue excluir a conta..
+
+Primeiro, é feito o click no botão "Excluir perfil", e aparece um alerta para o usuário informando a ação de exclusão: 
+![t3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/153e42e2-3b85-4058-a41e-52f1a805f56e)
+
+Em seguida a exclusão, o usuário é encaminhado para a página principal e deslogado automaticamente:
+![t4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/443e678d-aa5b-41da-aece-3d135d2a687e)
+
+Ao tentar realizar login novamente com a mesma conta de usuário, o login não acontece e o usuário permanece na mesma página onde está o formulário de criação de conta:
+
+![t5](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857777/baa16dd2-4c72-4c45-b999-f1510f7a5b6e)
+
+</li>
+</ol>
+<hr>
 
