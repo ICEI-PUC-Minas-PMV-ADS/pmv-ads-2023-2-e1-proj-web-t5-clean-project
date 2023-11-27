@@ -92,8 +92,11 @@ CT-07: Verificar se os usuários conseguem inserir o endereço e o mapa localiza
 
  NÃO FOI POSSÍVEL REALIZAR O TESTE, POIS O CAMPO DE BUSCA ESTÁ SEM FUNCIONALIDADE
 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/9f2fc178-5c75-4509-8cff-669ebbe69d08
+
+
  
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t5-clean-project/assets/144857658/0ff7c698-bd4c-435d-8d7b-812321104506
+
 
   
 
