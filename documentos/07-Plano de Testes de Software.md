@@ -129,7 +129,7 @@ Se ao clicar no ícone de olho, a senha fica visível para o usuário</li>
   <td>CT-04: Verificar se os usuários conseguem visualizar o carrossel e conseguem filtrar os tipos de lixo</td>
   <td>
   <ul>
-    <li> A aplicação deve oferecer uma funcionalidade em que o usuário pode clicar no botão e ser notificado quanto ao dia de coleta </li>
+    <li> | RF-14 |A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional. </li>
     </ul>
   </td>
   <td>Verificar se o carrossel funciona sozinho e o campo de busca mostra os pontos de coleta e se é possível filtrar por tipo de lixo
