@@ -300,3 +300,39 @@ Confirmar se todas as 5 imagens estão aparecendo no carrossel.
   <td>Israel Diniz</td>
  </tr>
 </table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+  <tr>
+  <td>CT-08: Verificar que os usuários conseguem salvar alterações no seu perfil e que conseguem excluir sua conta.</td>
+  <td>
+  <ul>
+    <li>RF-09	A aplicação deve ter uma página de perfil do usuário (com os dados) e configurações. </li>
+    </ul>
+  </td>
+  <td>Verificar se as alteraçoes estao sendo salvas ou excluidas do localstorage.
+</td>
+  <td>
+   <ol>
+   <li>Estar logado no site</li>
+    <li>Clicar no icone de Perfil</li>
+    <li>Fazer suas alteracoes</li>
+    <li>Clicar em Salvar ( Em caso de excluir conta clicar em excluir)</li>
+    <li>Clicar nas checkbox se deseja ou nao receber notificacoes</li>
+    </ol>
+   </td>
+  <td>
+   <ol>
+    <li>Todas as funcionalidades de salvar e excluir estão funcionando corretamente.</li>
+   </td>
+  <td>Felipe Dantas</td>
+ </tr>
+</table>
+
