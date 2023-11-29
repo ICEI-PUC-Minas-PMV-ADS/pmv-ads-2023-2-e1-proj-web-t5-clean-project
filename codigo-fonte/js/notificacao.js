@@ -1,7 +1,7 @@
 function Notificacao() {
 
-/*
-debugger
+
+
 
   let usuariosLocal = localStorage.getItem("usuarios");
   var usuariosArmazenados = JSON.parse(usuariosLocal);
@@ -15,7 +15,7 @@ debugger
             window.alert(JSON.stringify(coleta));
         })
     }
-  });*/
+  });
 
-  alert("seg, quar, sex");
+  alert(" O dia da sua coleta é seg, quar, sex");
 }
