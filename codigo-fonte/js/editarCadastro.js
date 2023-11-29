@@ -82,18 +82,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 
-  btnSave.addEventListener('click', function () {
-      salvarPerfil();
-  });
+  
 
   btnExcluir.addEventListener('click', function () {
       var confirmacao = confirm("Tem certeza de que deseja excluir o perfil?");
       if (confirmacao) {
           excluirPerfil();
+          localStorage.removeItem("usuarios");
       }
   });
 
   // Carregar dados ao carregar a página
   carregarDadosDoJSON();
 });
-

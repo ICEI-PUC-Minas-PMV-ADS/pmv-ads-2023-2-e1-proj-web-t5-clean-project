@@ -2,7 +2,14 @@
 @import './global/header.css';
 @import './global/footer.css';
 
-.carrossel {
+#título{
+  display: flex;
+  margin-left:50px;
+  margin: 20px;
+  padding: 20px;
+  color: #288397;
+}
+  .carrossel {
     position: relative;
     max-width: 600px;
     margin: 0 auto;
@@ -17,7 +24,7 @@
   
   .slide {
     flex: 0 0 100%;
-  }
+ }
   
   
   img {
@@ -26,7 +33,7 @@
   }
   
   /* Adicione estilos para as setas */
-.arrow {
+  .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -42,5 +49,54 @@
   .right-arrow {
     right: 0;
   }
-  
-  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+   
+  }
+
+  .busca {
+    background-color: #288397;
+    padding: 18px;
+    display: flex;
+    width: 450px;
+    gap: 10px;
+    border-radius: 10PX;
+  }
+
+  #residuo{
+    border: none;
+    border-radius: 5px;
+    padding: 5PX;
+  }
+
+  #cidade{
+    border: none;
+    border-radius: 5px;
+    padding: 5px; 
+  }
+
+  #btn{
+    background-color: #FFF;
+    width: 500px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    }
+
+  .resultado {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #333; /* Cor do texto dos resultados */  
+  }
+
+  .resultado ol {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: none;
+  } 

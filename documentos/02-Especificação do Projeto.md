@@ -78,6 +78,9 @@
 | RF-11 | A aplicação deve oferecer uma funcionalidade para que o usuário faça login                                                           | Alta    
 | RF-12 | A aplicação deve oferecer uma funcionalidade para que o usuário saia do seu perfil     | Alta    
 | RF-13 | A aplicação deve oferecer uma funcionalidade em que o usuário pode clicar no botão e ser notificado quanto ao dia de coleta                             | Alta   
+| RF-13 |A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional.                           | Alta   
+
+| RF-14 |A aplicação deve permitir que os usuários filtrem os pontos de coleta utilizando um campo de busca para inserir o nome de sua cidade e um filtro adicional.                           | Alta   
 
 **Prioridade: Alta / Média / Baixa. 
 
@@ -88,7 +91,7 @@
 |ID      | Descrição                                                                                       |Prioridade |
 |--------|-------------------------------------------------------------------------------------------------|-----------|
 | RNF-02 |  A aplicação deve ser compatível com os navegadores                                             | Baixa     | 
-| RNF-03 |  A aplicação deve ser acessível a pessoas deficientes                                           | Médio     | 
+| RNF-03 |  A aplicação deve ser de facil acesso                                                           | Médio     | 
 | RNF-04 |  A aplicação deve garantir que as informações pessoais e sensíveis do usuário seja protegido    | Alta      | 
 
 **Prioridade: Alta / Média / Baixa. 

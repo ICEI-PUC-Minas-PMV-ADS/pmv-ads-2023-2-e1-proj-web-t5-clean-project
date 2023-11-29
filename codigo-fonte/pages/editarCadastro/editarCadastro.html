@@ -78,7 +78,7 @@
                 <div class="grupo_botoes">
                 <!-- <form class="form"> -->
                     <div>
-                        <button id="btnSave" class="btnSave" onclick="salvarPerfil()">Salvar</button>
+                        <button id="btnSave" class="btnSave" >Salvar</button>
                     </div>
                     <div>
                         <button id="btnExcluir" class="btnExcluir">Excluir perfil</button>
@@ -115,6 +115,42 @@
 </footer> 
 <script src="../../js/editarCadastro.js"></script>
 <script src="../../js/Cadastro.js"></script>
+<script>
+    // Adicione este script para salvar o estado da checkbox
+    document.addEventListener('DOMContentLoaded', function () {
+        // Carregar o estado das checkboxes ao carregar a página
+        carregarEstadoCheckboxes();
+
+        // Adicionar listener para o botão "Salvar"
+        document.getElementById('btnSave').addEventListener('click', function () {
+            // Salvar o estado das checkboxes
+            salvarEstadoCheckboxes();
+            // Chamar a função salvarPerfil()
+            salvarPerfil();
+        });
+    });
+
+    // Função para salvar o estado das checkboxes no localStorage
+    function salvarEstadoCheckboxes() {
+        var checkbox1 = document.getElementById('checkbox1');
+        var checkbox2 = document.getElementById('checkbox2');
+
+        localStorage.setItem('checkbox1', checkbox1.checked);
+        localStorage.setItem('checkbox2', checkbox2.checked);
+    }
+
+    // Função para carregar o estado das checkboxes ao carregar a página
+    function carregarEstadoCheckboxes() {
+        var checkbox1 = document.getElementById('checkbox1');
+        var checkbox2 = document.getElementById('checkbox2');
+
+        var estadoCheckbox1 = localStorage.getItem('checkbox1');
+        var estadoCheckbox2 = localStorage.getItem('checkbox2');
+
+        checkbox1.checked = estadoCheckbox1 === 'true';
+        checkbox2.checked = estadoCheckbox2 === 'true';
+    }
+</script>
 </body>
 
 

@@ -55,3 +55,50 @@ document.querySelector('.carrossel').addEventListener('mouseout', function() {
 });
 
 showSlide(index);
+
+
+// Requisição para carregar o arquivo JSON
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('botaoBuscar').addEventListener('click', buscar);
+});
+
+function buscar() {
+  fetch('../../json/pontosDeColeta.json')
+    .then(response => response.json())
+    .then(data => {
+      const pontosColeta = data;
+  
+      const residuoSelecionado = document.getElementById('residuo').value;
+      const cidadeDigitada = document.getElementById('cidade').value;
+      const resultadoElement = document.getElementById('pontos-coleta');
+      resultadoElement.innerHTML = '';
+    
+      const chaveBusca = `${residuoSelecionado} - ${cidadeDigitada}`;
+      const regioes = pontosColeta[chaveBusca];
+    
+      if (regioes) {
+        for (const regiao in regioes) {
+          const locaisColeta = regioes[regiao];
+          const heading = document.createElement('h3');
+          heading.textContent = regiao;
+          resultadoElement.appendChild(heading);
+    
+          const listaPontos = document.createElement('ul');
+          locaisColeta.forEach(local => {
+            const listItem = document.createElement('li');
+            listItem.textContent = local;
+            listaPontos.appendChild(listItem);
+          });
+          resultadoElement.appendChild(listaPontos);
+        }
+      } else {
+        resultadoElement.innerHTML = 'Ainda não temos acesso aos pontos de coleta dessa cidade.';
+      }
+    })
+    .catch(error => {
+      console.error('Erro ao carregar o arquivo JSON:', error);
+    });
+}
+
+
+

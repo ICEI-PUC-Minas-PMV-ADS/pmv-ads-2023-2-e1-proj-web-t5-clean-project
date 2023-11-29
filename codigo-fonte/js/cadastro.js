@@ -5,7 +5,6 @@ const btnSignin = document.querySelector("#signin");
 const btnSignup = document.querySelector("#signup");
 const body = document.querySelector("body");
 
-const eyeIcons = document.querySelectorAll(".eyeIcon");
 
 
 //  Transição
@@ -220,3 +219,7 @@ function cadastrar() {
 
   // Redirecionar para a página de login ou para outra página após o cadastro
 }
+
+
+
+
