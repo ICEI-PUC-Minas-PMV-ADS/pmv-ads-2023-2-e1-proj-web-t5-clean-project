@@ -1,4 +1,4 @@
-# Título do Projeto
+# Clean Planet
 
 `Análise e Desenvolvimento de Sistemas - PUC Minas`
 
