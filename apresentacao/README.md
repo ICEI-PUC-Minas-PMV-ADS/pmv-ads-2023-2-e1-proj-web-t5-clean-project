@@ -29,4 +29,4 @@ A equipe também deverá gravar um vídeo de, no máximo, três minutos, com a a
 
 ## Hospedagem
 
-[Adicione o endereço eletrônico público onde o site encontra-se hospedado.]
+https://pmv-ads-2023-2-e1-proj-web-t5-clean-project.vercel.app/codigo-fonte/pages/home/index.html
